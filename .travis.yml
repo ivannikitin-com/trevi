@@ -1,0 +1,30 @@
+language:
+  - node_js
+
+os: linux
+version: ~> 1.0
+
+node_js:
+  - "10"
+
+before_install:
+  - npm install
+
+jobs:
+  include:
+    - stage: "Release"
+      name: Release build
+      if: branch = master
+      script:
+        - npm run build
+
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        local_dir: build
+        github_token: $GITHUB_OAUTH_TOKEN
+        target_branch: gh-pages
+        on:
+          branch: master
+
+  fast_finish: true
