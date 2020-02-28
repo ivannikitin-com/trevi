@@ -1,7 +1,7 @@
 {
   "name": "project-gulp-html",
   "version": "1.0.0",
-  "description": "Sass | ES6+ | Gulp",
+  "description": "Sass | ES6+ | Gulp ",
   "main": "gulpfile.js",
   "private": true,
   "dependencies": {
