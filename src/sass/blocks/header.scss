@@ -282,7 +282,7 @@
 .nav-main {
   padding: 0;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 
   @media (min-width: 481px) {
     justify-content: space-between;
@@ -313,6 +313,10 @@
 
     > li {
       margin-bottom: 8px;
+
+      @media (min-width: 992px) {
+        margin-bottom: 0;
+      }
 
       > a {
         display: inline-block;
