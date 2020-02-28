@@ -1,0 +1,59 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 481px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 470px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+);
+
+$font-family-base: "Montserrat", sans-serif;
+$font-size-base: 0.875rem;
+$line-height-base: 1.429;
+
+$white: #fff;
+$white-78: rgba(255, 255, 255, 0.78);
+$primary: #4a0903;
+$custom-control-indicator-checked-bg: red;
+$dark-grey: #26292c;
+$pinkish-grey-two: #ddc7c2;
+$dried-blood: #4a0903;
+$black: #191919;
+$navbar-light-color: $dried-blood;
+$white-four: #e6e6e6;
+$light-maroon: #a3525a;
+
+$body-bg: #fff;
+$body-color: $dark-grey;
+$reddy-brown: #5e0f02;
+$warm-grey: #eeeeee;
+$warm-grey-two: #eaeaea;
+$warm-grey-three: #6f6f6f;
+$white-three: #fafafa;
+$black-four: #212121;
+$black-five: #222222;
+$pinkish-grey-three: #ddc8c3;
+$scarlet: #b6001d;
+$white-six: #d9d9d9;
+
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+$btn-border-radius: 0;
+$btn-border-radius-lg: 0;
+$btn-border-radius-sm: 0;
+$navbar-toggler-border-radius: 0;
+
+$link-decoration: underline;
+$link-hover-decoration: none;
+$enable-rounded: false;
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+
+$headings-font-weight: 700;

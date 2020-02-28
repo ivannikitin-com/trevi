@@ -1,0 +1,363 @@
+.site-header {
+  .logo {
+    margin-right: 27px;
+
+    @media (min-width: 481px) {
+      margin-right: 0;
+    }
+
+    @media (min-width: 768px) {
+      // margin: 28px 0 auto 0;
+    }
+
+    &__img {
+      width: 165px;
+
+      @media (min-width: 1200px) {
+        width: auto;
+      }
+    }
+  }
+}
+
+.search {
+  padding: 5px 0 8px;
+  background-color: $pinkish-grey-two;
+
+  &__form {
+    position: relative;
+    padding-left: 47px;
+  }
+
+  &__button {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background: url(../img/sprite.png) 0 0 no-repeat;
+    width: 24px;
+    height: 23px;
+    border: 0;
+    padding: 0;
+    z-index: 1;
+  }
+
+  &__input {
+    color: $dried-blood;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid $dried-blood;
+    width: 100%;
+    padding: 5px 0 0;
+    background-color: transparent;
+    font-size: 16px;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $dried-blood;
+    }
+
+    &::-moz-placeholder {
+      color: $dried-blood;
+    }
+
+    &:-ms-input-placeholder {
+      color: $dried-blood;
+    }
+
+    &::-ms-input-placeholder {
+      color: $dried-blood;
+    }
+
+    &::placeholder {
+      color: $dried-blood;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.info {
+  $this: &;
+  padding-top: 14px;
+  font-size: 0.75rem;
+  line-height: normal;
+  border-bottom: 1px solid $warm-grey;
+  border-top: 1px solid $warm-grey;
+  margin-bottom: 26px;
+  margin-top: 1px;
+
+  @media (min-width: 1200px) {
+    padding-bottom: 8px;
+  }
+
+  .row {
+    align-items: stretch;
+
+    @media (min-width: 768px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__col {
+    margin-bottom: 12px;
+    min-height: 50px;
+
+    @media (min-width: 481px) {
+      margin-bottom: 10px;
+    }
+
+    &:first-child {
+      border-left: 0;
+    }
+
+    @media (min-width: 768px) {
+      border-left: 1px solid $warm-grey-two;
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      &:nth-of-type(3) {
+        border-left: 0;
+      }
+    }
+  }
+
+  &__phones {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 47px;
+    line-height: 1;
+
+    @media (min-width: 481px) {
+      margin-left: 0;
+      justify-content: flex-end;
+    }
+
+    &__icon {
+      display: inline-block;
+      width: 19px;
+      height: 20px;
+      flex: 0 0 auto;
+      background: url(../img/sprite.png) no-repeat;
+      background-position: -81px -61px;
+      margin-right: 22px;
+
+      @media (min-width: 481px) {
+        background-position: 0 -116px;
+        width: 27px;
+        height: 27px;
+        margin-right: 14px;
+      }
+    }
+
+    &__link {
+      display: block;
+      color: $black;
+      font-size: 0.875rem;
+      font-weight: bold;
+      margin-bottom: 4px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (min-width: 768px) {
+        font-size: 23px;
+      }
+    }
+  }
+
+  &__socials {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: $warm-grey-three;
+    margin-left: 47px;
+
+    @media (min-width: 481px) {
+      margin-left: 0;
+      padding-top: 14px;
+    }
+
+    &__wrap {
+      padding-right: 16px;
+    }
+
+    &__icon {
+      a {
+        display: inline-block;
+        background: url(../img/sprite.png) no-repeat;
+
+        &.fb {
+          background-position: -30px 0;
+          width: 8px;
+          height: 15px;
+        }
+
+        &.instagram {
+          background-position: -49px 0;
+          width: 14px;
+          height: 14px;
+          margin-left: 19px;
+        }
+      }
+    }
+  }
+
+  &__hours {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 47px;
+
+    @media (min-width: 481px) {
+      margin-left: 0;
+    }
+
+    &__icon {
+      display: inline-block;
+      width: 25px;
+      height: 20px;
+      flex: 0 0 auto;
+      background: url(../img/sprite.png) no-repeat;
+      background-position: -75px 0;
+      margin-right: 22px;
+
+      @media (min-width: 481px) {
+        background-position: 0 -32px;
+        width: 38px;
+        height: 29px;
+        margin-right: 11px;
+      }
+    }
+
+    b {
+      color: $black;
+      @media (min-width: 768px) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__address {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 47px;
+
+    @media (min-width: 481px) {
+      margin-left: 0;
+      justify-content: flex-end;
+    }
+
+    &__icon {
+      display: inline-block;
+      width: 21px;
+      height: 19px;
+      flex: 0 0 auto;
+      background: url(../img/sprite.png) no-repeat;
+      background-position: -79px -26px;
+      margin-right: 22px;
+
+      @media (min-width: 481px) {
+        background-position: 0 -74px;
+        width: 30px;
+        height: 27px;
+        margin-right: 15px;
+      }
+    }
+    &__wrap {
+      @media (min-width: 481px) {
+        min-width: 130px;
+      }
+
+      @media (min-width: 768px) {
+        min-width: 216px;
+      }
+    }
+  }
+}
+
+.nav-main {
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 34px;
+
+  @media (min-width: 481px) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: 992px) {
+    flex-flow: column wrap;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+
+    .navbar-nav {
+      width: 100%;
+      padding-top: 34px;
+
+      @media (min-width: 992px) {
+        justify-content: space-around;
+        padding-top: 18px;
+      }
+
+      align-items: center;
+    }
+  }
+
+  ul {
+    line-height: normal;
+
+    > li {
+      margin-bottom: 8px;
+
+      > a {
+        display: inline-block;
+        position: relative;
+        color: $reddy-brown;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 0.35rem 1rem;
+        letter-spacing: 3.2px;
+        text-decoration: none;
+
+        &::before {
+          position: absolute;
+          background-color: $reddy-brown;
+          content: "";
+          height: 1px;
+          width: 0;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: width cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s,
+            left cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+        }
+
+        &:hover::before {
+          width: 46px;
+        }
+      }
+
+      &.current-menu-item a {
+        &::before {
+          width: 46px;
+        }
+      }
+    }
+  }
+}
+
+.navbar-toggler {
+  border: 0;
+
+  &-icon {
+    width: 37px;
+    height: 28px;
+    background: url(../img/sprite.png) no-repeat 0 -155px !important;
+  }
+}

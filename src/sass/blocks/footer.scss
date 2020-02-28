@@ -1,0 +1,53 @@
+.site-footer {
+  border-top: 1px solid $warm-grey;
+  padding: 44px 0 36px;
+  margin-top: auto;
+
+  @media (min-width: 481px) {
+    padding-bottom: 40px;
+  }
+
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media (min-width: 481px) {
+      margin-bottom: 0;
+    }
+
+    &__link {
+      display: block;
+    }
+
+    &__img {
+      width: 165px;
+
+      @media (min-width: 481px) {
+        width: auto;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 16px;
+  }
+
+  .privacy-policy a {
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 1px;
+    text-decoration: none;
+    border-bottom: 1px solid $dried-blood;
+    margin-bottom: 12px;
+
+    &:hover {
+      border-bottom: 0;
+    }
+  }
+
+  @media (min-width: 481px) {
+    .copyright {
+      margin-bottom: 3px;
+    }
+  }
+}
