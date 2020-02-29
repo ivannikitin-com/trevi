@@ -844,8 +844,46 @@ button:focus {
     margin-bottom: 50px;
 
     @media (min-width: 481px) {
-      margin-bottom: 73px;
+      margin-bottom: 70px;
     }
+  }
+
+  &__column {
+    margin-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    background: $beige;
+    border: 10px solid $pinkish-grey-three;
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 19px;
+    padding-right: 18px;
+    padding-top: 20px;
+    padding-bottom: 22px;
+    min-height: 100%;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 0.45px;
+    align-self: center;
+    color: $black;
+  }
+
+  &__link {
+    text-align: center;
+  }
+
+  &__price {
+    font-size: 16px;
+    color: $dark-grey;
+    font-weight: bold;
+    line-height: normal;
   }
 }
 
