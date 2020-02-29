@@ -821,9 +821,17 @@ button:focus {
   background: $white-three;
   padding: 21px 0 61px;
 
+  &__service {
+    margin-top: 40px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
   &__title {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 
     @media (min-width: 481px) {
       margin-bottom: 14px;
@@ -841,10 +849,18 @@ button:focus {
     letter-spacing: 6px;
     text-align: center;
     color: $dark-grey;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
 
     @media (min-width: 481px) {
       margin-bottom: 70px;
+    }
+  }
+
+  & .row {
+    margin-top: 30px;
+
+    &:first-child {
+      margin-top: 0;
     }
   }
 
@@ -852,18 +868,25 @@ button:focus {
     margin-bottom: 17px;
     display: flex;
     flex-direction: column;
+    min-height: 348px;
   }
 
   &__item {
     background: $beige;
     border: 10px solid $pinkish-grey-three;
     display: flex;
-    flex-flow: column wrap;
-    padding-left: 19px;
-    padding-right: 18px;
-    padding-top: 20px;
+    flex-flow: column nowrap;
+    padding-top: 22px;
     padding-bottom: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
     min-height: 100%;
+    flex-grow: 1;
+
+    @media (min-width: 481px) {
+      padding-left: 19px;
+      padding-right: 18px;
+    }
   }
 
   &__name {
@@ -873,10 +896,26 @@ button:focus {
     letter-spacing: 0.45px;
     align-self: center;
     color: $black;
+    margin-bottom: 20px;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    // min-height: 100%;
+    flex-grow: 1;
+  }
+
+  &__subname {
+    font-size: 14px;
+    line-height: normal;
   }
 
   &__link {
     text-align: center;
+    margin-top: 15px;
   }
 
   &__price {
@@ -885,11 +924,11 @@ button:focus {
     font-weight: bold;
     line-height: normal;
     text-align: right;
+    white-space: nowrap;
   }
 
   &__amount {
     font-size: 24px;
-    white-space: nowrap;
   }
 }
 
