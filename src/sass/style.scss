@@ -819,7 +819,8 @@ button:focus {
 
 .multiple-services {
   background: $white-three;
-  padding: 21px 0 61px;
+  padding: 21px 0 44px;
+  margin-bottom: 42px;
 
   &__service {
     margin-top: 40px;
@@ -904,7 +905,6 @@ button:focus {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
-    // min-height: 100%;
     flex-grow: 1;
   }
 
@@ -929,6 +929,108 @@ button:focus {
 
   &__amount {
     font-size: 24px;
+  }
+}
+
+.price_services {
+  line-height: normal;
+  &__title {
+    text-align: center;
+    margin-bottom: 44px;
+  }
+
+  &__nav {
+    margin-bottom: 34px;
+
+    a {
+      display: inline-block;
+      color: $chocolate;
+      margin-right: 24px;
+      text-decoration: none;
+      border-bottom: 1px solid $dark-grey;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.active,
+      &:hover {
+        color: $dark-grey;
+        border-bottom: 0;
+      }
+    }
+  }
+
+  &__subtitle {
+    color: $black-six;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__wrap {
+    background: $white;
+    border: solid 10px $warm-grey-two;
+    padding: 0 15px;
+  }
+
+  &__price {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.45;
+    letter-spacing: 0.6px;
+    color: $dark-grey;
+    text-align: right;
+  }
+
+  &__amount {
+    font-size: 24px;
+  }
+
+  &__duration {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    color: $warm-grey-three;
+  }
+
+  &__link {
+    text-align: right;
+  }
+
+  &__descr {
+    margin-right: 25px;
+  }
+
+  &__more {
+    font-size: 12px;
+    letter-spacing: 0.12px;
+    color: $chocolate-two;
+    text-transform: lowercase;
+  }
+
+  &__sale {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.36;
+    letter-spacing: 0.35px;
+    color: $scarlet;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 27px;
+      height: 20px;
+      background: url(../img/sprite.png) 0 -274px no-repeat;
+      position: relative;
+      top: 8px;
+      margin-right: 6px;
+    }
   }
 }
 
