@@ -884,6 +884,12 @@ button:focus {
     color: $dark-grey;
     font-weight: bold;
     line-height: normal;
+    text-align: right;
+  }
+
+  &__amount {
+    font-size: 24px;
+    white-space: nowrap;
   }
 }
 
