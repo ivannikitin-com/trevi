@@ -941,6 +941,10 @@ button:focus {
 .price_services {
   line-height: normal;
 
+  &__section {
+    margin-bottom: 43px;
+  }
+
   &__title {
     text-align: center;
     margin-bottom: 44px;
