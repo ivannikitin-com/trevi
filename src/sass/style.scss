@@ -707,7 +707,7 @@ button:focus {
   margin-bottom: 0;
   padding: 0 50px;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   &::before,
   &::after {
@@ -755,6 +755,7 @@ button:focus {
   background-position: 0 0;
   background-size: cover;
   text-align: center;
+  margin-bottom: 33px;
 
   div[class^="col-"] {
     padding-left: 0;
@@ -823,6 +824,10 @@ button:focus {
   margin-bottom: 42px;
 
   &__service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     margin-top: 40px;
 
     &:first-child {
@@ -1006,6 +1011,10 @@ button:focus {
     font-size: 14px;
     letter-spacing: 0.35px;
     color: $warm-grey-three;
+
+    @media (min-width: 481px) {
+      text-align: right;
+    }
   }
 
   &__link {
@@ -1024,7 +1033,7 @@ button:focus {
     letter-spacing: 0.12px;
     color: $chocolate-two;
     text-transform: lowercase;
-    margin-left: 18px;
+    white-space: nowrap;
   }
 
   &__sale {
@@ -1056,6 +1065,10 @@ button:focus {
 
     p:last-child {
       margin-bottom: 0;
+    }
+
+    @media (min-width: 481px) {
+      margin-right: 18px;
     }
   }
 }
