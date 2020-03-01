@@ -979,7 +979,6 @@ button:focus {
   &__wrap {
     background: $white;
     border: solid 10px $warm-grey-two;
-    // padding: 0 15px;
   }
 
   &__item {
@@ -1000,7 +999,11 @@ button:focus {
     line-height: 1.45;
     letter-spacing: 0.6px;
     color: $dark-grey;
-    text-align: right;
+    order: 12;
+
+    @media (min-width: 768px) {
+      text-align: right;
+    }
   }
 
   &__amount {
@@ -1011,9 +1014,33 @@ button:focus {
     font-size: 14px;
     letter-spacing: 0.35px;
     color: $warm-grey-three;
+    text-align: right;
+    margin-bottom: 18px;
+    order: 4;
 
-    @media (min-width: 481px) {
-      text-align: right;
+    @media (min-width: 768px) and (max-width: 991px) {
+      text-align: left;
+    }
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+
+    span {
+      position: relative;
+      top: 3px;
+
+      @media (min-width: 768px) {
+        position: static;
+      }
+    }
+  }
+
+  &__link_column {
+    order: 12;
+
+    @media (min-width: 768px) {
+      order: 12;
     }
   }
 
@@ -1026,6 +1053,12 @@ button:focus {
     font-weight: 500;
     letter-spacing: 0.18px;
     color: $dark-grey;
+
+    > span {
+      @media (min-width: 768px) {
+        margin-right: 18px;
+      }
+    }
   }
 
   &__more {
@@ -1052,8 +1085,16 @@ button:focus {
       height: 20px;
       background: url(../img/sprite.png) 0 -274px no-repeat;
       position: relative;
-      top: 8px;
-      margin-right: 6px;
+      top: 7px;
+      margin-right: 8px;
+    }
+  }
+
+  &__descr_column {
+    order: 2;
+
+    @media (min-width: 768px) {
+      order: 13;
     }
   }
 
@@ -1066,9 +1107,14 @@ button:focus {
     p:last-child {
       margin-bottom: 0;
     }
+  }
 
-    @media (min-width: 481px) {
-      margin-right: 18px;
+  &__sale_column_mobile {
+    margin-bottom: 18px;
+    order: 3;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
     }
   }
 }
