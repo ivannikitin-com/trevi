@@ -530,6 +530,11 @@ button:focus {
   &__text {
     text-align: justify;
   }
+
+  &_toggle {
+    padding-bottom: 8px;
+    display: inline-block;
+  }
 }
 
 %zoom {
@@ -1036,6 +1041,10 @@ button:focus {
   &__amount {
     font-size: 24px;
     white-space: nowrap;
+
+    &_size_m {
+      font-size: 18px;
+    }
   }
 
   &__duration {
@@ -1093,6 +1102,12 @@ button:focus {
   &__sublist {
     border-bottom: solid 1px $warm-grey-two;
     margin-left: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    &:last-child {
+      border-bottom: 0;
+    }
   }
 
   &__subname {

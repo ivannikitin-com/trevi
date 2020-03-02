@@ -2,6 +2,19 @@ import "bootstrap";
 import "popper.js";
 import $ from "jquery";
 
+(function($) {
+  $(function() {
+    $("#about-us_toggle").on("click", function() {
+      $("#about-us_col2").removeClass("d-none");
+      if ($(this).html() == "подробнее") {
+        $(this).html("скрыть");
+      } else {
+        $(this).html("подробнее");
+      }
+    });
+  });
+})(jQuery);
+
 $(document).ready(function() {
   $(".specialists .owl-carousel, .gallery_carousel .owl-carousel").owlCarousel({
     items: 3,
