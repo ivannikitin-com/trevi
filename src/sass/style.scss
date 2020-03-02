@@ -499,6 +499,7 @@ button:focus {
       font-size: 36px;
       font-weight: bold;
       letter-spacing: 0.9px;
+      white-space: nowrap;
     }
   }
 
@@ -634,6 +635,10 @@ button:focus {
 
     button {
       margin: 0;
+
+      &.disabled {
+        display: none !important;
+      }
 
       @media (min-width: 481px) {
         position: absolute;
@@ -935,6 +940,7 @@ button:focus {
 
   &__amount {
     font-size: 24px;
+    white-space: nowrap;
   }
 }
 
@@ -1013,6 +1019,7 @@ button:focus {
 
   &__amount {
     font-size: 24px;
+    white-space: nowrap;
   }
 
   &__duration {
@@ -1021,6 +1028,7 @@ button:focus {
     color: $warm-grey-three;
     text-align: right;
     margin-bottom: 18px;
+    white-space: nowrap;
     order: 4;
 
     @media (min-width: 768px) and (max-width: 991px) {
