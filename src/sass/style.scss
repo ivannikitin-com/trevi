@@ -523,6 +523,15 @@ button:focus {
     padding-bottom: 78px;
   }
 
+  h1 {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    @media (min-width: 481px) {
+      margin-bottom: 6px;
+    }
+  }
+
   .subtitle {
     margin-bottom: 46px;
   }
