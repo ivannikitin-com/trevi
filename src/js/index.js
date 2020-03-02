@@ -3,7 +3,7 @@ import "popper.js";
 import $ from "jquery";
 
 $(document).ready(function() {
-  $(".specialists .owl-carousel").owlCarousel({
+  $(".specialists .owl-carousel, .gallery_carousel .owl-carousel").owlCarousel({
     items: 3,
     nav: true,
     margin: 78,

@@ -532,6 +532,21 @@ button:focus {
   }
 }
 
+%zoom {
+  &::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background: url(../img/sprite.png) 0 -196px no-repeat;
+    width: 61px;
+    height: 61px;
+    top: 43%;
+    left: 50%;
+    margin-top: 30px;
+    margin-left: -30px;
+  }
+}
+
 .licence {
   padding-top: 35px;
   margin-bottom: 28px;
@@ -561,29 +576,19 @@ button:focus {
   }
 
   &__link {
-    &::before {
-      content: "";
-      position: absolute;
-      display: inline-block;
-      background: url(../img/sprite.png) 0 -196px no-repeat;
-      width: 61px;
-      height: 61px;
-      top: 43%;
-      left: 50%;
-      margin-top: -30px;
-      margin-left: -30px;
-    }
+    @extend %zoom;
   }
 }
 
-.specialists {
+.specialists,
+.gallery_carousel {
   margin-bottom: 66px;
 
   @media (min-width: 481px) {
     margin-bottom: 110px;
   }
 
-  .row {
+  & .row {
     @media (max-width: 480px) {
       margin-left: 0;
       margin-right: 0;
@@ -601,6 +606,7 @@ button:focus {
   }
 
   &__img {
+    position: relative;
     margin-bottom: 17px;
     max-width: 100%;
   }
@@ -612,6 +618,10 @@ button:focus {
     text-align: center;
     text-transform: uppercase;
     color: $warm-grey-three;
+  }
+
+  &__link {
+    @extend %zoom;
   }
 
   .owl-nav {
@@ -949,6 +959,12 @@ button:focus {
 
   &__section {
     margin-bottom: 43px;
+
+    &:last-child {
+      @media (min-width: 481px) {
+        margin-bottom: 104px;
+      }
+    }
   }
 
   &__title {
@@ -1072,6 +1088,19 @@ button:focus {
         margin-right: 18px;
       }
     }
+  }
+
+  &__sublist {
+    border-bottom: solid 1px $warm-grey-two;
+    margin-left: 24px;
+  }
+
+  &__subname {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.16px;
+    color: $warm-grey-three;
+    padding-bottom: 14px;
   }
 
   &__more {
