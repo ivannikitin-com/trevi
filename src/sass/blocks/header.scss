@@ -105,7 +105,10 @@
 
   &__col {
     margin-bottom: 12px;
-    min-height: 50px;
+
+    @media (min-width: 768px) {
+      min-height: 50px;
+    }
 
     @media (min-width: 481px) {
       margin-bottom: 10px;
