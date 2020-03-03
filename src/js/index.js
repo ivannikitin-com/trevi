@@ -16,24 +16,40 @@ import $ from "jquery";
 })(jQuery);
 
 $(document).ready(function() {
-  $(".specialists .owl-carousel, .gallery_carousel .owl-carousel").owlCarousel({
-    items: 3,
-    nav: true,
-    margin: 78,
-    navText: false,
-    dots: false,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 3
+  $(".specialists .carousel").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
       }
-    }
+    ]
   });
 
-  $(".slider-main .owl-carousel").owlCarousel({
-    items: 1,
-    nav: false
+  $(".slider-main .carousel").slick({
+    dots: true,
+    arrows: false
+  });
+
+  $(".gallery_carousel .carousel").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 });
