@@ -595,7 +595,13 @@ button:focus {
 
 .specialists,
 .gallery_carousel {
-  margin-bottom: 66px;
+  .slick-slider {
+    margin-bottom: 100px;
+
+    @media (min-width: 481px) {
+      margin-bottom: 0;
+    }
+  }
 
   @media (min-width: 481px) {
     margin-bottom: 110px;
@@ -651,56 +657,16 @@ button:focus {
     padding-right: 38px;
   }
 }
-// .owl-carousel {
-//   .owl-nav {
-//     @media (min-width: 481px) {
-//       position: absolute;
-//       bottom: calc(50% + 66px - 18px);
-//       transform: translate(0, -50%);
-//       left: 0;
-//       right: 0;
-//     }
-
-//     button {
-//       &.disabled {
-//         display: none !important;
-//       }
-
-//       @media (min-width: 481px) {
-//         position: absolute;
-//       }
-
-//       &.owl-next,
-//       &.owl-prev {
-//         width: 37px;
-//         height: 36px;
-//         background: url(../img/sprite.png) no-repeat;
-//       }
-
-//       &.owl-prev {
-//         background-position: -63px -93px;
-//         margin-right: 7px;
-
-//         @media (min-width: 481px) {
-//           right: calc(100% + 8.33333% - 30px);
-//         }
-//       }
-
-//       &.owl-next {
-//         background-position: -63px -147px;
-//         margin-left: 7px;
-
-//         @media (min-width: 481px) {
-//           left: calc(100% + 8.33333% - 30px);
-//         }
-//       }
-//     }
-
-//   }
-
-// }
 
 .slick-slider {
+  .slick-slide {
+    padding-bottom: 23px;
+
+    @media (min-width: 481px) {
+      padding-bottom: 0;
+    }
+  }
+
   & .slick-prev,
   & .slick-next {
     position: absolute;
@@ -708,31 +674,49 @@ button:focus {
     font-size: 0;
     width: 37px;
     height: 36px;
-    top: 50%;
+    top: 100%;
     background: url(../img/sprite.png) no-repeat;
-    transform: translate(0, -50%);
     padding: 0;
     border: 0;
     outline: none;
     line-height: 0;
+    z-index: 2;
+
+    @media (min-width: 481px) {
+      top: 50%;
+      transform: translate(0, -50%);
+    }
   }
 
   .slick-prev {
     background-position: -63px -93px;
-    left: -25px;
-    // margin-right: 7px;
+    right: 50%;
+    left: auto;
+    margin-right: 7px;
 
     &:hover {
       background-position: -63px -295px;
+    }
+
+    @media (min-width: 481px) {
+      left: calc(8.33333% * -1);
+      margin-right: 0;
     }
   }
 
   .slick-next {
     background-position: -63px -147px;
-    right: -25px;
+    left: 50%;
+    margin-left: 7px;
 
     &:hover {
       background-position: -63px -246px;
+    }
+
+    @media (min-width: 481px) {
+      right: calc(8.33333% * -1);
+      margin-left: 0;
+      left: auto;
     }
   }
 
