@@ -15,6 +15,7 @@
 @import "../../node_modules/bootstrap/scss/transitions";
 @import "../../node_modules/bootstrap/scss/code";
 @import "../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../node_modules/bootstrap/scss/forms";
 @import "../../node_modules/bootstrap/scss/custom-forms";
 @import "../../node_modules/bootstrap/scss/buttons";
 @import "mixins";
@@ -133,6 +134,10 @@ h1.entry-title {
   }
 }
 
+li {
+  margin-bottom: 0.7rem;
+}
+
 .list-mark {
   li {
     display: flex;
@@ -151,6 +156,42 @@ h1.entry-title {
       margin-top: 7px;
     }
   }
+
+  &.mark-right {
+    li {
+      text-align: right;
+      flex-direction: row-reverse;
+
+      &::before {
+        margin-left: 9px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.custom-control-label {
+  &::before {
+    top: -2px;
+  }
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url(../img/sprite.png);
+  background-position: -74px -199px !important;
+  height: 26px !important;
+  width: 26px !important;
+}
+
+textarea {
+  &.form-control {
+    height: 176px;
+  }
+}
+
+.star {
+  top: 0;
+  font-size: 14px;
+  color: $scarlet;
 }
 
 .btn {
@@ -185,6 +226,19 @@ h1.entry-title {
     color: $white;
     background-color: $light-maroon;
     border-color: $light-maroon;
+  }
+}
+
+.btn-three {
+  color: $white;
+  background-color: $dark-grey;
+  border-color: $dark-grey;
+  border-width: 2px;
+
+  &:hover {
+    color: $dark-grey;
+    background-color: $white;
+    border-color: $warm-grey-five;
   }
 }
 

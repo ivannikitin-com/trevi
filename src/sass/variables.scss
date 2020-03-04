@@ -16,11 +16,13 @@ $container-max-widths: (
 $font-family-base: "Montserrat", sans-serif;
 $font-size-base: 0.875rem;
 $line-height-base: 1.429;
+$input-placeholder-color: rgba(136, 136, 136, 0.4);
+$input-height: 50px;
+$input-border-width: 2px;
 
 $white: #fff;
 $white-78: rgba(255, 255, 255, 0.78);
 $primary: #4a0903;
-$custom-control-indicator-checked-bg: red;
 $dark-grey: #26292c;
 $pinkish-grey-two: #ddc7c2;
 $dried-blood: #4a0903;
@@ -32,6 +34,7 @@ $chocolate: #380404;
 $black-six: #000;
 $chocolate-two: #390604;
 $white-three: #fafafa;
+$input-color: $dark-grey;
 
 $body-bg: $white;
 $body-color: $dark-grey;
@@ -40,6 +43,7 @@ $warm-grey: #eeeeee;
 $warm-grey-two: #eaeaea;
 $warm-grey-three: #6f6f6f;
 $warm-grey-four: #828282;
+$warm-grey-five: #e5e5e5;
 $black-four: #212121;
 $black-five: #222222;
 $pinkish-grey-three: #ddc8c3;
@@ -47,6 +51,8 @@ $scarlet: #b6001d;
 $pinkish-grey-three: #ddc8c3;
 $pinkish-grey-four: #bfbfbf;
 $beige: #f3e8e4;
+
+$input-border-color: $warm-grey;
 
 $border-radius: 0;
 $border-radius-lg: 0;
@@ -63,3 +69,7 @@ $navbar-toggler-padding-y: 0;
 $navbar-toggler-padding-x: 0;
 
 $headings-font-weight: 700;
+
+$custom-control-indicator-size: 1.357rem;
+$custom-control-indicator-border-color: $warm-grey;
+$custom-control-indicator-border-width: 1px;

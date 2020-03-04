@@ -3,12 +3,18 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Типографика</title>
+	<title>Document</title>
 	<link
 		href="https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,700,700i&display=swap&subset=cyrillic-ext,latin-ext"
 		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" /> -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" /> -->
+	<!-- <link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" /> -->
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -91,28 +97,51 @@
 						бонусной программы.</li>
 				</ul>
 
+				<!--Маркер справа-->
+				<p>Маркер справа</p>
+				<ul class="list-mark list-unstyled mark-right">
+					<li>Бонусы начисляются в размере 5% от стоимости услуги (любой), без каких либо ограничений </li>
+					<li>Бонусы начисляются сразу в момент обслуживания. </li>
+				</ul>
 
-				<form class="form-inline mt-2 mt-md-0">
-					<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-				</form>
+				<ol>
+					<li>Если БК не использовалась в течение 60 дней с момента последнего посещения салона, карта остается
+						активной, но накопленные на карте
+						бонусы аннулируются.</li>
+					<li>При оплате услуги может использоваться только одна БК.</li>
+					<li>Если БК была утеряна или испорчена, то она восстановлению не подлежит.</li>
+					<li>Салон красоты оставляет за собой право вносить изменения в правила бонусной программы без предварительного
+						уведомления
+						участников.</li>
+				</ol>
+
 
 				<form>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="name">Ваше имя <sup class="star">*</sup></label>
+								<input type="text" class="form-control" id="name" placeholder="Напишите Ваше имя">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="email">Ваш E-mail <sup class="star">*</sup></label>
+								<input type="email" class="form-control" id="email" placeholder="Ваша электронная почта">
+							</div>
+						</div>
+					</div>
+					<!--/.row-->
 					<div class="form-group">
-						<label for="exampleInputEmail1">Email address</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-							placeholder="Enter email">
-						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						<label for="message">Ваше сообщение </label>
+						<textarea class="form-control" id="message" placeholder="Текст сообщения"></textarea>
 					</div>
-					<div class="form-group">
-						<label for="exampleInputPassword1">Password</label>
-						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					<div class="form-group custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="accept">
+						<label class="custom-control-label" for="accept">Я согласен с <a href="">условиями конфеденциальности
+								данных</a></label>
 					</div>
-					<div class="form-group form-check">
-						<input type="checkbox" class="form-check-input" id="exampleCheck1">
-						<label class="form-check-label" for="exampleCheck1">Check me out</label>
-					</div>
-					<button type="submit" class="btn btn-primary">Submit</button>
+					<button type="submit" class="btn btn-three">Отправить</button>
 				</form>
 
 		</div>
@@ -183,6 +212,9 @@
 	<!--/#page-->
 
 </body>
+<script src="js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script src="js/script.js"></script>
 
 </html>
