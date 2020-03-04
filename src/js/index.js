@@ -19,7 +19,7 @@ $(document).ready(function() {
   $(".specialists .carousel").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    // appendArrows: $(".specialists__img"),
+    infinite: false,
     responsive: [
       {
         breakpoint: 992,
@@ -44,6 +44,7 @@ $(document).ready(function() {
   $(".gallery_carousel .carousel").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
+    infinite: false,
     responsive: [
       {
         breakpoint: 992,

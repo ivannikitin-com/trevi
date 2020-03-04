@@ -1,4 +1,11 @@
 .site-header {
+  background: $white;
+  padding-bottom: 34px;
+
+  @media (min-width: 481px) {
+    padding-bottom: 38px;
+  }
+
   .logo {
     margin-right: 27px;
 
@@ -285,7 +292,7 @@
 .nav-main {
   padding: 0;
   justify-content: center;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 
   @media (min-width: 481px) {
     justify-content: space-between;
