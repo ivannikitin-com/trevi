@@ -178,8 +178,6 @@ li {
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
   background-image: url(../img/sprite.png);
   background-position: -74px -199px !important;
-  height: 26px !important;
-  width: 26px !important;
 }
 
 textarea {
@@ -595,7 +593,7 @@ button:focus {
   }
 
   h1 {
-    display: inline-block;
+    display: block;
     margin-bottom: 20px;
 
     @media (min-width: 481px) {
