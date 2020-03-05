@@ -175,10 +175,15 @@ li {
     top: -2px;
   }
 }
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  /*border-color: $warm-grey;*/
+  background-color: $white;
+}
+/*.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
   background-image: url(../img/sprite.png);
   background-position: -74px -199px !important;
-}
+}*/
 
 textarea {
   &.form-control {
@@ -1112,6 +1117,7 @@ button:focus {
 }
 
 .price_services {
+  $this: &;
   line-height: normal;
 
   &__section {
@@ -1132,11 +1138,14 @@ button:focus {
   &__nav {
     margin-bottom: 34px;
 
-    a {
+    .control {
       display: inline-block;
+      background: none;
+      box-shadow: none;
+      padding: 0;
+      border: 0;
       color: $chocolate;
       margin-right: 24px;
-      text-decoration: none;
       border-bottom: 1px solid $dark-grey;
       margin-bottom: 10px;
 
@@ -1144,10 +1153,10 @@ button:focus {
         margin-right: 0;
       }
 
-      &.active,
+      &.mixitup-control-active,
       &:hover {
         color: $dark-grey;
-        border-bottom: 0;
+        border-color: transparent;
       }
     }
   }
@@ -1175,6 +1184,10 @@ button:focus {
     &:last-child {
       border-bottom: 0;
     }
+
+    .row {
+      align-items: center;
+    }
   }
 
   &__price {
@@ -1201,19 +1214,16 @@ button:focus {
 
   &__duration {
     font-size: 14px;
+    text-align: right;
     letter-spacing: 0.35px;
     color: $warm-grey-three;
-    text-align: right;
     margin-bottom: 18px;
     white-space: nowrap;
     order: 4;
 
-    @media (min-width: 768px) and (max-width: 991px) {
-      text-align: left;
-    }
-
     @media (min-width: 768px) {
       margin-bottom: 0;
+      text-align: left;
     }
 
     span {
@@ -1258,6 +1268,18 @@ button:focus {
 
     &:last-child {
       border-bottom: 0;
+    }
+
+    .row {
+      align-items: flex-end;
+    }
+
+    #{$this}__price {
+      text-align: right;
+    }
+
+    &:last-child {
+      padding-bottom: 20px;
     }
   }
 
@@ -1315,7 +1337,7 @@ button:focus {
     font-size: 12px;
     letter-spacing: 0.12px;
     color: $warm-grey-three;
-    padding: 34px 0;
+    padding: 0 0 34px 0;
 
     p:last-child {
       margin-bottom: 0;

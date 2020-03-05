@@ -54,7 +54,13 @@ $beige: #f3e8e4;
 $carmine: #a40017;
 $crimson: #910013;
 // $component-active-color: $crimson;
+// $custom-control-indicator-active-bg: $white;
 $custom-control-indicator-checked-color: $crimson;
+// $custom-control-indicator-bg: $white;
+$custom-control-indicator-checked-border-color: $warm-grey;
+$custom-control-indicator-checked-disabled-bg: $white;
+$custom-control-indicator-active-bg: $white;
+$custom-control-indicator-focus-border-color: $warm-grey;
 
 $input-border-color: $warm-grey;
 

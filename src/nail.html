@@ -12,9 +12,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" /> -->
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" /> -->
-	<!--<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />-->
+
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -307,873 +305,354 @@
 					<div class="price_services__nav text-center">
 						<div class="row">
 							<div class="col-10 offset-1 col-xl-4 offset-xl-4">
-								<a href="#" class="active">Все </a>
-								<a href="#">Маникюр</a>
-								<a href="#">Педикюр</a>
-								<a href="#">Наращивание</a>
+								<button type="button" data-filter="all" class="control mixitup-control-active">Все</button>
+								<button type="button" data-filter=".manicure" class="control">Маникюр</button>
+								<button type="button" data-filter=".pedicure" class="control">Педикюр</button>
+								<button type="button" data-filter=".extension" class="control">Наращивание</button>
 							</div>
 						</div>
 					</div>
 
-					<div class="price_services__section">
-						<div class="price_services__subtitle">Маникюр. Покрытие</div>
-						<div class="price_services__wrap">
+					<div class="sections">
 
-							<div class="price_services__item">
-								<div class="row align-items-center">
-									<div class="col-12 col-lg-6">
-										<div class="row">
-											<div class="col-12 col-md-9 order-first">
-												<span class="price_services__name">
-													<span>Маникюр женский</span>
-													<!--<a data-toggle="collapse"
+						<div class="price_services__section mix manicure">
+							<div class="price_services__subtitle">Маникюр. Покрытие</div>
+							<div class="price_services__wrap">
+
+								<div class="price_services__item">
+									<div class="row">
+										<div class="col-12 col-lg-6">
+											<div class="row">
+												<div class="col-12 col-md-9 order-first">
+													<span class="price_services__name">
+														<span>Маникюр женский</span>
+														<!--<a data-toggle="collapse"
 														href="#collapseExample-1" role="button" aria-expanded="false"
 														class="price_services__more">Скрыть описание</a>-->
-												</span>
-											</div>
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<!--<a href="#" class="price_services__sale">Акция</a>-->
-											</div>
-										</div>
-
-									</div>
-									<div class="col-12 price_services__descr_column collapse" id="collapseExample-1">
-										<!-- <div class="price_services__descr">
-												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
-													натуральный
-													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
-													позволить
-													изяществу взять верх над буйством цвета?</p>
-											</div> -->
-									</div>
-
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<!-- <a href="#" class="price_services__sale">Акция</a> -->
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<span class="price_services__amount">750</span>₽</span>
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
-								</div>
-
-							</div>
-							<!--/.price_services__item-->
-
-							<div class="price_services__item">
-								<div class="row align-items-center">
-									<div class="col-12 col-lg-6">
-										<div class="row mb-lg-0 mb-2">
-											<div class="col-12 col-md-9 order-first">
-												<span class="price_services__name"><span>Снятие простого лака показываю название в две строки
-														верстальщику</span> <a data-toggle="collapse" href="#collapseExample-2" role="button"
-														aria-expanded="false" class="price_services__more">Скрыть описание</a></span>
-											</div>
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<a href="#" class="price_services__sale">Акция</a>
-											</div>
-										</div>
-
-									</div>
-									<div class="col-12 price_services__descr_column collapse" id="collapseExample-2">
-										<div class="price_services__descr">
-											<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
-												натуральный
-												лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
-												позволить
-												изяществу взять верх над буйством цвета?</p>
-										</div>
-									</div>
-
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<a href="#" class="price_services__sale">Акция</a>
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<span class="price_services__amount">10809</span>₽
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
-								</div>
-
-							</div>
-							<!--/.price_services__item-->
-
-							<div class="price_services__item">
-								<div class="row align-items-center">
-									<div class="col-12 col-lg-6">
-										<div class="row">
-											<div class="col-12 col-md-9 order-first">
-												<span class="price_services__name"><span>Маникюр мужской</span> <a data-toggle="collapse"
-														href="#collapseExample-3" role="button" aria-expanded="false"
-														class="price_services__more">Подробнее</a></span>
-											</div>
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<!-- <a href="#" class="price_services__sale">Акция</a> -->
-											</div>
-										</div>
-
-									</div>
-									<div class="col-12 price_services__descr_column">
-										<div class="collapse" id="collapseExample-3">
-											<div class="price_services__descr">
-												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
-													натуральный
-													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
-													позволить
-													изяществу взять верх над буйством цвета?</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<!-- <a href="#" class="price_services__sale">Акция</a> -->
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<span class="price_services__amount">900</span>₽
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
-								</div>
-
-							</div>
-							<!--/.price_services__item-->
-
-							<div class="price_services__item">
-								<div class="row align-items-center">
-									<div class="col-12 col-lg-6">
-										<div class="row">
-											<div class="col-12 col-md-9 order-first">
-												<span class="price_services__name">
-													<span>Снятие покрытия "Vinylux"</span>
-													<!--  <a
-														data-toggle="collapse" href="#collapseExample-4" role="button" aria-expanded="false"
-														class="price_services__more">Подробнее</a> -->
-												</span>
-											</div>
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block">
-												<!-- <a href="#" class="price_services__sale">Акция</a> -->
-											</div>
-										</div>
-
-									</div>
-									<div class="col-12 price_services__descr_column">
-										<div class="collapse" id="collapseExample-4">
-											<!-- <div class="price_services__descr">
-												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
-													натуральный
-													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
-													позволить
-													изяществу взять верх над буйством цвета?</p>
-											</div> -->
-										</div>
-									</div>
-
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<!-- <a href="#" class="price_services__sale">Акция</a> -->
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<span class="price_services__amount">10180</span>₽
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
-								</div>
-
-							</div>
-							<!--/.price_services__item-->
-
-							<div class="price_services__item">
-								<div class="row align-items-center">
-									<div class="col-12 col-lg-6">
-										<div class="row">
-											<div class="col-12 col-md-9 order-first">
-												<span class="price_services__name">
-													<span>Cнятие стойкого покрытия</span>
-													<!--  <a
-														data-toggle="collapse" href="#collapseExample-5" role="button" aria-expanded="false"
-														class="price_services__more">Подробнее</a> -->
-												</span>
-											</div>
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<!-- <a href="#" class="price_services__sale">Акция</a> -->
-											</div>
-										</div>
-
-									</div>
-									<div class="col-12 price_services__descr_column">
-										<div class="collapse" id="collapseExample-5">
-											<!-- <div class="price_services__descr">
-												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
-													натуральный
-													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
-													позволить
-													изяществу взять верх над буйством цвета?</p>
-											</div> -->
-										</div>
-									</div>
-
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<!-- <a href="#" class="price_services__sale">Акция</a> -->
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>160 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<span class="price_services__amount">400</span>₽
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
-								</div>
-
-							</div>
-							<!--/.price_services__item-->
-
-							<div class="price_services__item">
-								<div class="row align-items-center">
-									<div class="col-12 col-lg-6">
-										<div class="row mb-lg-0 mb-2">
-											<div class="col-12 col-md-9 order-first">
-												<span class="price_services__name">
-													<span>Дизайн 1 ногтя</span>
-													<!--  <a
-														data-toggle="collapse" href="#collapseExample-6" role="button" aria-expanded="false"
-														class="price_services__more">Подробнее</a> -->
-												</span>
-											</div>
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<!-- <a href="#" class="price_services__sale">Акция</a> -->
-											</div>
-										</div>
-
-									</div>
-									<div class="col-12 price_services__descr_column">
-										<div class="collapse" id="collapseExample-6">
-											<!-- <div class="price_services__descr">
-												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
-													натуральный
-													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
-													позволить
-													изяществу взять верх над буйством цвета?</p>
-											</div> -->
-										</div>
-									</div>
-
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<!-- <a href="#" class="price_services__sale">Акция</a> -->
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<span class="price_services__amount">100</span>₽
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
-								</div>
-
-							</div>
-							<!--/.price_services__item-->
-
-						</div>
-					</div>
-					<!--/.price_services__section-->
-
-					<div class="price_services__section">
-						<div class="price_services__subtitle">Педикюр</div>
-						<div class="price_services__wrap">
-
-							<div class="price_services__item">
-								<div class="row align-items-center">
-									<div class="col-12 col-lg-6">
-										<div class="row mb-lg-0 mb-2">
-											<div class="col-12 col-md-9 order-first">
-												<span class="price_services__name">
-													<span>Педикюр</span>
-													<!--<a data-toggle="collapse"
-														href="#collapseExample-7" role="button" aria-expanded="false"
-														class="price_services__more">Скрыть описание</a>-->
-												</span>
-											</div>
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<!-- <a href="#" class="price_services__sale">Акция</a> -->
-											</div>
-										</div>
-
-									</div>
-									<div class="col-12 price_services__descr_column collapse" id="collapseExample-7">
-										<!-- <div class="price_services__descr">
-												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
-													натуральный
-													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
-													позволить
-													изяществу взять верх над буйством цвета?</p>
-											</div> -->
-									</div>
-
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<!-- <a href="#" class="price_services__sale">Акция</a> -->
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<span class="price_services__amount">750</span>₽
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
-								</div>
-
-							</div>
-							<!--/.price_services__item-->
-
-							<div class="price_services__item">
-								<div class="row align-items-center">
-									<div class="col-12 col-lg-6">
-										<div class="row mb-lg-0 mb-2">
-											<div class="col-12 col-md-9 order-first">
-												<span class="price_services__name"><span>Педикюр Аппаратный</span> <a data-toggle="collapse"
-														href="#collapseExample-8" role="button" aria-expanded="false"
-														class="price_services__more">Скрыть описание</a></span>
-											</div>
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<a href="#" class="price_services__sale">Акция</a>
-											</div>
-										</div>
-
-									</div>
-									<div class="col-12 price_services__descr_column collapse" id="collapseExample-8">
-										<div class="price_services__descr">
-											<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
-												натуральный
-												лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
-												позволить
-												изяществу взять верх над буйством цвета?</p>
-										</div>
-									</div>
-
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<a href="#" class="price_services__sale">Акция</a>
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<span class="price_services__amount">10809</span>₽
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
-								</div>
-
-							</div>
-							<!--/.price_services__item-->
-
-							<div class="price_services__item d-md-block d-flex flex-md-row flex-column">
-								<div class="row align-items-center order-first">
-									<div class="col-12 col-lg-6">
-										<div class="row mb-lg-0 mb-2">
-
-											<div class="col-12 col-md-9">
-												<span class="price_services__name"><span>Стрижка женская</span>
-													<a data-toggle="collapse" href="#collapseExample-9" role="button" aria-expanded="false"
-														class="price_services__more">Подробнее</a>
-												</span>
-											</div>
-
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<a href="#" class="price_services__sale">Акция</a>
-											</div>
-										</div>
-
-									</div>
-
-									<div class="col-12 price_services__descr_column">
-										<div class="collapse" id="collapseExample-9">
-											<div class="price_services__descr">
-												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
-													натуральный
-													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
-													позволить
-													изяществу взять верх над буйством цвета?</p>
-											</div>
-										</div>
-									</div>
-									<!--For MOBILE-->
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<!-- <a href="#" class="price_services__sale">Акция</a> -->
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0 d-none d-md-block "><span>60
-											минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<!-- <span class="price_services__amount">900</span>₽ -->
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column d-none d-md-block ">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
-								</div>
-								<!--/.row-->
-
-								<!-- For MOBILE -->
-								<div class="row align-items-center order-last d-block d-md-none">
-									<div class="col-12 col-lg-6">
-										<div class="row mb-lg-0 mb-2">
-
-											<div class="col-12 col-md-9 d-md-none d-block">
-												<span class="price_services__name"><span>Стрижка женская</span>
-													<!-- <a data-toggle="collapse" href="#collapseExample-9" role="button" aria-expanded="false"
-														class="price_services__more">Подробнее</a> -->
-												</span>
-											</div>
-
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<!-- <a href="#" class="price_services__sale">Акция</a> -->
-											</div>
-										</div>
-
-									</div>
-
-									<div class="col-12 price_services__descr_column">
-										<div class="collapse" id="collapseExample-9">
-											<div class="price_services__descr">
-												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
-													натуральный
-													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
-													позволить
-													изяществу взять верх над буйством цвета?</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<a href="#" class="price_services__sale">Акция</a>
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<!-- <span class="price_services__amount">900</span>₽ -->
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
-								</div>
-								<!--/.row-->
-
-								<!-- --- -->
-
-								<div class="price_services__sublist">
-									<div class="row align-items-center">
-										<div class="col-12 col-lg-6">
-
-											<div class="row mb-lg-0 mb-2">
-
-												<div class="col-12 col-md-9">
-													<div class="price_services__subname">Короткая длина</div>
+													</span>
 												</div>
+												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
+													<!--<a href="#" class="price_services__sale">Акция</a>-->
+												</div>
+											</div>
 
+										</div>
+										<div class="col-12 price_services__descr_column collapse" id="collapseExample-1">
+											<!-- <div class="price_services__descr">
+												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
+													натуральный
+													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
+													позволить
+													изяществу взять верх над буйством цвета?</p>
+											</div> -->
+										</div>
+
+										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
+											<!-- <a href="#" class="price_services__sale">Акция</a> -->
+										</div>
+
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
+										<div class="col-6 col-md-4 col-lg-3 price_services__price">
+											<span class="price_services__amount">750</span>₽</span>
+										</div>
+										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
+										</div>
+									</div>
+
+								</div>
+								<!--/.price_services__item-->
+
+								<div class="price_services__item">
+									<div class="row">
+										<div class="col-12 col-lg-6">
+											<div class="row mb-lg-0 mb-2">
+												<div class="col-12 col-md-9 order-first">
+													<span class="price_services__name"><span>Снятие простого лака показываю название в две строки
+															верстальщику</span> <a data-toggle="collapse" href="#collapseExample-2" role="button"
+															aria-expanded="false" class="price_services__more">Скрыть описание</a></span>
+												</div>
+												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
+													<a href="#" class="price_services__sale">Акция</a>
+												</div>
+											</div>
+
+										</div>
+										<div class="col-12 price_services__descr_column collapse" id="collapseExample-2">
+											<div class="price_services__descr">
+												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
+													натуральный
+													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
+													позволить
+													изяществу взять верх над буйством цвета?</p>
+											</div>
+										</div>
+
+										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
+											<a href="#" class="price_services__sale">Акция</a>
+										</div>
+
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
+										<div class="col-6 col-md-4 col-lg-3 price_services__price">
+											<span class="price_services__amount">10809</span>₽
+										</div>
+										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
+										</div>
+									</div>
+
+								</div>
+								<!--/.price_services__item-->
+
+								<div class="price_services__item">
+									<div class="row">
+										<div class="col-12 col-lg-6">
+											<div class="row">
+												<div class="col-12 col-md-9 order-first">
+													<span class="price_services__name"><span>Маникюр мужской</span> <a data-toggle="collapse"
+															href="#collapseExample-3" role="button" aria-expanded="false"
+															class="price_services__more">Подробнее</a></span>
+												</div>
 												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
 													<!-- <a href="#" class="price_services__sale">Акция</a> -->
 												</div>
 											</div>
-											<!--/.row-->
 
 										</div>
-
-										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-											<!-- <a href="#" class="price_services__sale">Акция</a> -->
-										</div>
-
-										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0">
-											<!--<span>60 минут</span>-->
-										</div>
-										<div class="col-6 col-md-4 col-lg-3 price_services__price">
-											<span class="price_services__amount_size_m">800</span>₽
-										</div>
-										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-											<!-- <div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div> -->
-										</div>
-									</div>
-									<!--/.row-->
-
-								</div>
-								<!--/.price_services__sublist-->
-
-								<div class="price_services__sublist">
-									<div class="row align-items-center">
-										<div class="col-12 col-lg-6">
-
-											<div class="row mb-lg-0 mb-2">
-
-												<div class="col-12 col-md-9 order-first">
-													<div class="price_services__subname">Длинные</div>
-												</div>
-
-												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block">
-													<!-- <a href="#" class="price_services__sale">Акция</a> -->
+										<div class="col-12 price_services__descr_column">
+											<div class="collapse" id="collapseExample-3">
+												<div class="price_services__descr">
+													<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
+														натуральный
+														лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
+														позволить
+														изяществу взять верх над буйством цвета?</p>
 												</div>
 											</div>
-											<!--/.row-->
-
 										</div>
 
 										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
 											<!-- <a href="#" class="price_services__sale">Акция</a> -->
 										</div>
 
-										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0">
-											<!--<span>60 минут</span>-->
-										</div>
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
 										<div class="col-6 col-md-4 col-lg-3 price_services__price">
-											<span class="price_services__amount_size_m">5000</span>₽
+											<span class="price_services__amount">900</span>₽
 										</div>
 										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-											<!-- <div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div> -->
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
 										</div>
 									</div>
-									<!--/.row-->
 
 								</div>
-								<!--/.price_services__sublist-->
+								<!--/.price_services__item-->
 
-								<div class="price_services__sublist">
-									<div class="row align-items-center">
+								<div class="price_services__item">
+									<div class="row">
 										<div class="col-12 col-lg-6">
-
-											<div class="row mb-lg-0 mb-2">
-
+											<div class="row">
 												<div class="col-12 col-md-9 order-first">
-													<div class="price_services__subname">Средняя длина</div>
-												</div>
-
-												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block">
-													<!-- <a href="#" class="price_services__sale">Акция</a> -->
-												</div>
-											</div>
-											<!--/.row-->
-
-										</div>
-
-										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-											<!-- <a href="#" class="price_services__sale">Акция</a> -->
-										</div>
-
-										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0">
-											<!--<span>60 минут</span>-->
-										</div>
-										<div class="col-6 col-md-4 col-lg-3 price_services__price">
-											<span class="price_services__amount_size_m">1000</span>₽
-										</div>
-										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-											<!-- <div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div> -->
-										</div>
-									</div>
-									<!--/.row-->
-
-								</div>
-								<!--/.price_services__sublist-->
-
-								<div class="price_services__sublist">
-									<div class="row align-items-center">
-										<div class="col-12 col-lg-6">
-
-											<div class="row mb-lg-0 mb-2">
-
-												<div class="col-12 col-md-9 order-first">
-													<div class="price_services__subname">Очень длинные</div>
-												</div>
-
-												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block">
-													<!-- <a href="#" class="price_services__sale">Акция</a> -->
-												</div>
-											</div>
-											<!--/.row-->
-
-										</div>
-
-										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-											<!-- <a href="#" class="price_services__sale">Акция</a> -->
-										</div>
-
-										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0">
-											<!--<span>60 минут</span>-->
-										</div>
-										<div class="col-6 col-md-4 col-lg-3 price_services__price">
-											<span class="price_services__amount_size_m">15000</span>₽
-										</div>
-										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-											<!-- <div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div> -->
-										</div>
-									</div>
-									<!--/.row-->
-
-								</div>
-								<!--/.price_services__sublist-->
-
-							</div>
-							<!--/.price_services__item-->
-
-							<div class="price_services__item">
-								<div class="row align-items-center">
-									<div class="col-12 col-lg-6">
-										<div class="row mb-lg-0 mb-2">
-											<div class="col-12 col-md-9 order-first">
-												<span class="price_services__name">
-													<span>Снятие покрытия "Vinylux"</span>
-													<!--  <a
-														data-toggle="collapse" href="#collapseExample-10" role="button" aria-expanded="false"
+													<span class="price_services__name">
+														<span>Снятие покрытия "Vinylux"</span>
+														<!--  <a
+														data-toggle="collapse" href="#collapseExample-4" role="button" aria-expanded="false"
 														class="price_services__more">Подробнее</a> -->
-												</span>
+													</span>
+												</div>
+												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block">
+													<!-- <a href="#" class="price_services__sale">Акция</a> -->
+												</div>
 											</div>
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<!-- <a href="#" class="price_services__sale">Акция</a> -->
-											</div>
+
 										</div>
-
-									</div>
-
-									<div class="col-12 price_services__descr_column">
-										<div class="collapse" id="collapseExample-10">
-											<!-- <div class="price_services__descr">
+										<div class="col-12 price_services__descr_column">
+											<div class="collapse" id="collapseExample-4">
+												<!-- <div class="price_services__descr">
 												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
 													натуральный
 													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
 													позволить
 													изяществу взять верх над буйством цвета?</p>
 											</div> -->
+											</div>
 										</div>
-									</div>
 
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<!-- <a href="#" class="price_services__sale">Акция</a> -->
-									</div>
+										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
+											<!-- <a href="#" class="price_services__sale">Акция</a> -->
+										</div>
 
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<span class="price_services__amount">10180</span>₽
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
+										<div class="col-6 col-md-4 col-lg-3 price_services__price">
+											<span class="price_services__amount">10180</span>₽
+										</div>
+										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
+										</div>
 									</div>
 
 								</div>
-								<!--/.row-->
+								<!--/.price_services__item-->
 
-							</div>
-							<!--/.price_services__item-->
-
-							<div class="price_services__item">
-								<div class="row align-items-center">
-									<div class="col-12 col-lg-6">
-										<div class="row mb-lg-0 mb-2">
-											<div class="col-12 col-md-9 order-first">
-												<span class="price_services__name">
-													<span>Cнятие стойкого покрытия</span>
-													<!--  <a
-														data-toggle="collapse" href="#collapseExample-11" role="button" aria-expanded="false"
+								<div class="price_services__item">
+									<div class="row">
+										<div class="col-12 col-lg-6">
+											<div class="row">
+												<div class="col-12 col-md-9 order-first">
+													<span class="price_services__name">
+														<span>Cнятие стойкого покрытия</span>
+														<!--  <a
+														data-toggle="collapse" href="#collapseExample-5" role="button" aria-expanded="false"
 														class="price_services__more">Подробнее</a> -->
-												</span>
+													</span>
+												</div>
+												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
+													<!-- <a href="#" class="price_services__sale">Акция</a> -->
+												</div>
 											</div>
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<!-- <a href="#" class="price_services__sale">Акция</a> -->
-											</div>
-										</div>
 
-									</div>
-									<div class="col-12 price_services__descr_column">
-										<div class="collapse" id="collapseExample-11">
-											<!-- <div class="price_services__descr">
+										</div>
+										<div class="col-12 price_services__descr_column">
+											<div class="collapse" id="collapseExample-5">
+												<!-- <div class="price_services__descr">
 												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
 													натуральный
 													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
 													позволить
 													изяществу взять верх над буйством цвета?</p>
 											</div> -->
+											</div>
+										</div>
+
+										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
+											<!-- <a href="#" class="price_services__sale">Акция</a> -->
+										</div>
+
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>160 минут</span></div>
+										<div class="col-6 col-md-4 col-lg-3 price_services__price">
+											<span class="price_services__amount">400</span>₽
+										</div>
+										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
 										</div>
 									</div>
 
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<!-- <a href="#" class="price_services__sale">Акция</a> -->
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>160 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<span class="price_services__amount">400</span>₽
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
 								</div>
+								<!--/.price_services__item-->
 
-							</div>
-							<!--/.price_services__item-->
-
-							<div class="price_services__item">
-								<div class="row align-items-center">
-									<div class="col-12 col-lg-6">
-										<div class="row mb-lg-0 mb-2">
-											<div class="col-12 col-md-9 order-first">
-												<span class="price_services__name">
-													<span>Дизайн 1 ногтя</span>
-													<!--  <a
-														data-toggle="collapse" href="#collapseExample-12" role="button" aria-expanded="false"
+								<div class="price_services__item">
+									<div class="row">
+										<div class="col-12 col-lg-6">
+											<div class="row mb-lg-0 mb-2">
+												<div class="col-12 col-md-9 order-first">
+													<span class="price_services__name">
+														<span>Дизайн 1 ногтя</span>
+														<!--  <a
+														data-toggle="collapse" href="#collapseExample-6" role="button" aria-expanded="false"
 														class="price_services__more">Подробнее</a> -->
-												</span>
+													</span>
+												</div>
+												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
+													<!-- <a href="#" class="price_services__sale">Акция</a> -->
+												</div>
 											</div>
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<!-- <a href="#" class="price_services__sale">Акция</a> -->
-											</div>
-										</div>
 
-									</div>
-									<div class="col-12 price_services__descr_column">
-										<div class="collapse" id="collapseExample-12">
-											<!-- <div class="price_services__descr">
+										</div>
+										<div class="col-12 price_services__descr_column">
+											<div class="collapse" id="collapseExample-6">
+												<!-- <div class="price_services__descr">
 												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
 													натуральный
 													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
 													позволить
 													изяществу взять верх над буйством цвета?</p>
 											</div> -->
+											</div>
+										</div>
+
+										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
+											<!-- <a href="#" class="price_services__sale">Акция</a> -->
+										</div>
+
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
+										<div class="col-6 col-md-4 col-lg-3 price_services__price">
+											<span class="price_services__amount">100</span>₽
+										</div>
+										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
 										</div>
 									</div>
 
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<!-- <a href="#" class="price_services__sale">Акция</a> -->
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<span class="price_services__amount">100</span>₽
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
 								</div>
+								<!--/.price_services__item-->
 
 							</div>
-							<!--/.price_services__item-->
-
 						</div>
-					</div>
-					<!--/.price_services__section-->
+						<!--/.price_services__section-->
 
-					<div class="price_services__section">
-						<div class="price_services__subtitle">Наращивание</div>
-						<div class="price_services__wrap">
+						<div class="price_services__section mix pedicure">
+							<div class="price_services__subtitle">Педикюр</div>
+							<div class="price_services__wrap">
 
-							<div class="price_services__item">
-								<div class="row align-items-center">
-									<div class="col-12 col-lg-6">
-										<div class="row mb-lg-0 mb-2">
-											<div class="col-12 col-md-9 order-first">
-												<span class="price_services__name">
-													<span>Моделирование ногтей акрил</span>
-													<!--<a data-toggle="collapse"
-														href="#collapseExample-14" role="button" aria-expanded="false"
+								<div class="price_services__item">
+									<div class="row">
+										<div class="col-12 col-lg-6">
+											<div class="row mb-lg-0 mb-2">
+												<div class="col-12 col-md-9 order-first">
+													<span class="price_services__name">
+														<span>Педикюр</span>
+														<!--<a data-toggle="collapse"
+														href="#collapseExample-7" role="button" aria-expanded="false"
 														class="price_services__more">Скрыть описание</a>-->
-												</span>
+													</span>
+												</div>
+												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
+													<!-- <a href="#" class="price_services__sale">Акция</a> -->
+												</div>
 											</div>
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<!-- <a href="#" class="price_services__sale">Акция</a> -->
-											</div>
-										</div>
 
-									</div>
-									<div class="col-12 price_services__descr_column collapse" id="collapseExample-14">
-										<!-- <div class="price_services__descr">
+										</div>
+										<div class="col-12 price_services__descr_column collapse" id="collapseExample-7">
+											<!-- <div class="price_services__descr">
 												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
 													натуральный
 													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
 													позволить
 													изяществу взять верх над буйством цвета?</p>
 											</div> -->
+										</div>
+
+										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
+											<!-- <a href="#" class="price_services__sale">Акция</a> -->
+										</div>
+
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
+										<div class="col-6 col-md-4 col-lg-3 price_services__price">
+											<span class="price_services__amount">750</span>₽
+										</div>
+										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
+										</div>
 									</div>
 
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<!-- <a href="#" class="price_services__sale">Акция</a> -->
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>160 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										от <span class="price_services__amount">13 500</span>₽ до <span class="price_services__amount">31
-											500</span>₽
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
 								</div>
+								<!--/.price_services__item-->
 
-							</div>
-							<!--/.price_services__item-->
+								<div class="price_services__item">
+									<div class="row align-items-center">
+										<div class="col-12 col-lg-6">
+											<div class="row mb-lg-0 mb-2">
+												<div class="col-12 col-md-9 order-first">
+													<span class="price_services__name"><span>Педикюр Аппаратный</span> <a data-toggle="collapse"
+															href="#collapseExample-8" role="button" aria-expanded="false"
+															class="price_services__more">Скрыть описание</a></span>
+												</div>
+												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
+													<a href="#" class="price_services__sale">Акция</a>
+												</div>
+											</div>
 
-							<div class="price_services__item">
-								<div class="row align-items-center">
-									<div class="col-12 col-lg-6">
-										<div class="row mb-lg-0 mb-2">
-											<div class="col-12 col-md-9 order-first">
-												<span class="price_services__name"><span>Снятие простого лака показываю название в две строки
-														верстальщику</span> <a data-toggle="collapse" href="#collapseExample-15" role="button"
-														aria-expanded="false" class="price_services__more">Скрыть описание</a></span>
-											</div>
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<a href="#" class="price_services__sale">Акция</a>
-											</div>
 										</div>
-
-									</div>
-									<div class="col-12 price_services__descr_column collapse" id="collapseExample-15">
-										<div class="price_services__descr">
-											<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
-												натуральный
-												лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
-												позволить
-												изяществу взять верх над буйством цвета?</p>
-										</div>
-									</div>
-
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<a href="#" class="price_services__sale">Акция</a>
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<span class="price_services__amount">10809</span>₽
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
-								</div>
-
-							</div>
-							<!--/.price_services__item-->
-
-							<div class="price_services__item">
-								<div class="row align-items-center">
-									<div class="col-12 col-lg-6">
-										<div class="row mb-lg-0 mb-2">
-											<div class="col-12 col-md-9 order-first">
-												<span class="price_services__name"><span>Укрепление своих ногтей гелем</span> <a
-														data-toggle="collapse" href="#collapseExample-16" role="button" aria-expanded="false"
-														class="price_services__more">Подробнее</a></span>
-											</div>
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<!-- <a href="#" class="price_services__sale">Акция</a> -->
-											</div>
-										</div>
-
-									</div>
-									<div class="col-12 price_services__descr_column">
-										<div class="collapse" id="collapseExample-16">
+										<div class="col-12 price_services__descr_column collapse" id="collapseExample-8">
 											<div class="price_services__descr">
 												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
 													натуральный
@@ -1182,165 +661,570 @@
 													изяществу взять верх над буйством цвета?</p>
 											</div>
 										</div>
+
+										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
+											<a href="#" class="price_services__sale">Акция</a>
+										</div>
+
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
+										<div class="col-6 col-md-4 col-lg-3 price_services__price">
+											<span class="price_services__amount">10809</span>₽
+										</div>
+										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
+										</div>
 									</div>
 
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<!-- <a href="#" class="price_services__sale">Акция</a> -->
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<span class="price_services__amount">900</span>₽
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
 								</div>
+								<!--/.price_services__item-->
+
+								<div class="price_services__item d-md-block d-flex flex-md-row flex-column">
+									<div class="row order-first">
+										<div class="col-12 col-lg-6">
+											<div class="row mb-lg-0 mb-2">
+
+												<div class="col-12 col-md-9">
+													<span class="price_services__name"><span>Стрижка женская</span>
+														<a data-toggle="collapse" href="#collapseExample-9" role="button" aria-expanded="false"
+															class="price_services__more">Подробнее</a>
+													</span>
+												</div>
+
+												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
+													<a href="#" class="price_services__sale">Акция</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 price_services__descr_column">
+											<div class="collapse" id="collapseExample-9">
+												<div class="price_services__descr">
+													<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
+														натуральный
+														лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
+														позволить
+														изяществу взять верх над буйством цвета?</p>
+												</div>
+											</div>
+										</div>
+										<!--For MOBILE-->
+										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
+											<a href="#" class="price_services__sale">Акция</a>
+										</div>
+
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60
+												минут</span></div>
+										<div class="col-6 col-md-4 col-lg-3 price_services__price">
+											<!-- <span class="price_services__amount">900</span>₽ -->
+										</div>
+										<div class="col-6 col-md-5 col-lg-2 price_services__link_column d-none d-md-block ">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
+										</div>
+									</div>
+									<!--/.row-->
+
+									<!-- For MOBILE -->
+									<div class="row order-last d-flex d-md-none">
+
+										<div class="col-12 price_services__descr_column">
+											<div class="collapse" id="collapseExample-9">
+												<div class="price_services__descr">
+													<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
+														натуральный
+														лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
+														позволить
+														изяществу взять верх над буйством цвета?</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-md-5 col-lg-2 price_services__link_column">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
+										</div>
+									</div>
+									<!--/.row-->
+
+									<div class="price_services__sublist">
+										<div class="row">
+											<div class="col-6 col-md-3 col-lg-7">
+												<div class="price_services__subname">Короткая длина</div>
+											</div>
+
+											<div class="col-6 col-md-4 col-lg-3 price_services__price">
+												<span class="price_services__amount_size_m">800</span>₽
+											</div>
+										</div>
+										<!--/.row-->
+									</div>
+									<!--/.price_services__sublist-->
+
+									<div class="price_services__sublist">
+										<div class="row">
+											<div class="col-6 col-md-3 col-lg-7">
+												<div class="price_services__subname">Длинные</div>
+											</div>
+
+											<div class="col-6 col-md-4 col-lg-3 price_services__price">
+												<span class="price_services__amount_size_m">5000</span>₽
+											</div>
+										</div>
+										<!--/.row-->
+
+									</div>
+									<!--/.price_services__sublist-->
+
+									<div class="price_services__sublist">
+										<div class="row">
+											<div class="col-6 col-md-3 col-lg-7">
+												<div class="price_services__subname">Средняя длина</div>
+											</div>
+
+											<div class="col-6 col-md-4 col-lg-3 price_services__price">
+												<span class="price_services__amount_size_m">1000</span>₽
+											</div>
+										</div>
+										<!--/.row-->
+
+									</div>
+									<!--/.price_services__sublist-->
+
+									<div class="price_services__sublist">
+										<div class="row">
+											<div class="col-6 col-md-3 col-lg-7">
+												<div class="price_services__subname">Очень длинные</div>
+											</div>
+											<div class="col-6 col-md-4 col-lg-3 price_services__price">
+												<span class="price_services__amount_size_m">15000</span>₽
+											</div>
+										</div>
+										<!--/.row-->
+									</div>
+									<!--/.price_services__sublist-->
+
+								</div>
+								<!--/.price_services__item-->
+
+								<div class="price_services__item">
+									<div class="row align-items-center">
+										<div class="col-12 col-lg-6">
+											<div class="row mb-lg-0 mb-2">
+												<div class="col-12 col-md-9 order-first">
+													<span class="price_services__name">
+														<span>Снятие покрытия "Vinylux"</span>
+														<!--  <a
+														data-toggle="collapse" href="#collapseExample-10" role="button" aria-expanded="false"
+														class="price_services__more">Подробнее</a> -->
+													</span>
+												</div>
+												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
+													<!-- <a href="#" class="price_services__sale">Акция</a> -->
+												</div>
+											</div>
+
+										</div>
+
+										<div class="col-12 price_services__descr_column">
+											<div class="collapse" id="collapseExample-10">
+												<!-- <div class="price_services__descr">
+												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
+													натуральный
+													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
+													позволить
+													изяществу взять верх над буйством цвета?</p>
+											</div> -->
+											</div>
+										</div>
+
+										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
+											<!-- <a href="#" class="price_services__sale">Акция</a> -->
+										</div>
+
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
+										<div class="col-6 col-md-4 col-lg-3 price_services__price">
+											<span class="price_services__amount">10180</span>₽
+										</div>
+										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
+										</div>
+
+									</div>
+									<!--/.row-->
+
+								</div>
+								<!--/.price_services__item-->
+
+								<div class="price_services__item">
+									<div class="row align-items-center">
+										<div class="col-12 col-lg-6">
+											<div class="row mb-lg-0 mb-2">
+												<div class="col-12 col-md-9 order-first">
+													<span class="price_services__name">
+														<span>Cнятие стойкого покрытия</span>
+														<!--  <a
+														data-toggle="collapse" href="#collapseExample-11" role="button" aria-expanded="false"
+														class="price_services__more">Подробнее</a> -->
+													</span>
+												</div>
+												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
+													<!-- <a href="#" class="price_services__sale">Акция</a> -->
+												</div>
+											</div>
+
+										</div>
+										<div class="col-12 price_services__descr_column">
+											<div class="collapse" id="collapseExample-11">
+												<!-- <div class="price_services__descr">
+												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
+													натуральный
+													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
+													позволить
+													изяществу взять верх над буйством цвета?</p>
+											</div> -->
+											</div>
+										</div>
+
+										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
+											<!-- <a href="#" class="price_services__sale">Акция</a> -->
+										</div>
+
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>160 минут</span></div>
+										<div class="col-6 col-md-4 col-lg-3 price_services__price">
+											<span class="price_services__amount">400</span>₽
+										</div>
+										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
+										</div>
+									</div>
+
+								</div>
+								<!--/.price_services__item-->
+
+								<div class="price_services__item">
+									<div class="row align-items-center">
+										<div class="col-12 col-lg-6">
+											<div class="row mb-lg-0 mb-2">
+												<div class="col-12 col-md-9 order-first">
+													<span class="price_services__name">
+														<span>Дизайн 1 ногтя</span>
+														<!--  <a
+														data-toggle="collapse" href="#collapseExample-12" role="button" aria-expanded="false"
+														class="price_services__more">Подробнее</a> -->
+													</span>
+												</div>
+												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
+													<!-- <a href="#" class="price_services__sale">Акция</a> -->
+												</div>
+											</div>
+
+										</div>
+										<div class="col-12 price_services__descr_column">
+											<div class="collapse" id="collapseExample-12">
+												<!-- <div class="price_services__descr">
+												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
+													натуральный
+													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
+													позволить
+													изяществу взять верх над буйством цвета?</p>
+											</div> -->
+											</div>
+										</div>
+
+										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
+											<!-- <a href="#" class="price_services__sale">Акция</a> -->
+										</div>
+
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
+										<div class="col-6 col-md-4 col-lg-3 price_services__price">
+											<span class="price_services__amount">100</span>₽
+										</div>
+										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
+										</div>
+									</div>
+
+								</div>
+								<!--/.price_services__item-->
 
 							</div>
-							<!--/.price_services__item-->
+						</div>
+						<!--/.price_services__section-->
 
-							<div class="price_services__item">
-								<div class="row align-items-center">
-									<div class="col-12 col-lg-6">
-										<div class="row mb-lg-0 mb-2">
-											<div class="col-12 col-md-9 order-first">
-												<span class="price_services__name">
-													<span>Снятие покрытия "Vinylux"</span>
-													<!--  <a
+						<div class="price_services__section mix extension">
+							<div class="price_services__subtitle">Наращивание</div>
+							<div class="price_services__wrap">
+
+								<div class="price_services__item">
+									<div class="row align-items-center">
+										<div class="col-12 col-lg-6">
+											<div class="row mb-lg-0 mb-2">
+												<div class="col-12 col-md-9 order-first">
+													<span class="price_services__name">
+														<span>Моделирование ногтей акрил</span>
+														<!--<a data-toggle="collapse"
+														href="#collapseExample-14" role="button" aria-expanded="false"
+														class="price_services__more">Скрыть описание</a>-->
+													</span>
+												</div>
+												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
+													<!-- <a href="#" class="price_services__sale">Акция</a> -->
+												</div>
+											</div>
+
+										</div>
+										<div class="col-12 price_services__descr_column collapse" id="collapseExample-14">
+											<!-- <div class="price_services__descr">
+												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
+													натуральный
+													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
+													позволить
+													изяществу взять верх над буйством цвета?</p>
+											</div> -->
+										</div>
+
+										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
+											<!-- <a href="#" class="price_services__sale">Акция</a> -->
+										</div>
+
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>160 минут</span></div>
+										<div class="col-6 col-md-4 col-lg-3 price_services__price">
+											от <span class="price_services__amount">13 500</span>₽ до <span class="price_services__amount">31
+												500</span>₽
+										</div>
+										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
+										</div>
+									</div>
+
+								</div>
+								<!--/.price_services__item-->
+
+								<div class="price_services__item">
+									<div class="row align-items-center">
+										<div class="col-12 col-lg-6">
+											<div class="row mb-lg-0 mb-2">
+												<div class="col-12 col-md-9 order-first">
+													<span class="price_services__name"><span>Снятие простого лака показываю название в две строки
+															верстальщику</span> <a data-toggle="collapse" href="#collapseExample-15" role="button"
+															aria-expanded="false" class="price_services__more">Скрыть описание</a></span>
+												</div>
+												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
+													<a href="#" class="price_services__sale">Акция</a>
+												</div>
+											</div>
+
+										</div>
+										<div class="col-12 price_services__descr_column collapse" id="collapseExample-15">
+											<div class="price_services__descr">
+												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
+													натуральный
+													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
+													позволить
+													изяществу взять верх над буйством цвета?</p>
+											</div>
+										</div>
+
+										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
+											<a href="#" class="price_services__sale">Акция</a>
+										</div>
+
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
+										<div class="col-6 col-md-4 col-lg-3 price_services__price">
+											<span class="price_services__amount">10809</span>₽
+										</div>
+										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
+										</div>
+									</div>
+
+								</div>
+								<!--/.price_services__item-->
+
+								<div class="price_services__item">
+									<div class="row align-items-center">
+										<div class="col-12 col-lg-6">
+											<div class="row mb-lg-0 mb-2">
+												<div class="col-12 col-md-9 order-first">
+													<span class="price_services__name"><span>Укрепление своих ногтей гелем</span> <a
+															data-toggle="collapse" href="#collapseExample-16" role="button" aria-expanded="false"
+															class="price_services__more">Подробнее</a></span>
+												</div>
+												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
+													<!-- <a href="#" class="price_services__sale">Акция</a> -->
+												</div>
+											</div>
+
+										</div>
+										<div class="col-12 price_services__descr_column">
+											<div class="collapse" id="collapseExample-16">
+												<div class="price_services__descr">
+													<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
+														натуральный
+														лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
+														позволить
+														изяществу взять верх над буйством цвета?</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
+											<!-- <a href="#" class="price_services__sale">Акция</a> -->
+										</div>
+
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
+										<div class="col-6 col-md-4 col-lg-3 price_services__price">
+											<span class="price_services__amount">900</span>₽
+										</div>
+										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
+										</div>
+									</div>
+
+								</div>
+								<!--/.price_services__item-->
+
+								<div class="price_services__item">
+									<div class="row align-items-center">
+										<div class="col-12 col-lg-6">
+											<div class="row mb-lg-0 mb-2">
+												<div class="col-12 col-md-9 order-first">
+													<span class="price_services__name">
+														<span>Снятие покрытия "Vinylux"</span>
+														<!--  <a
 														data-toggle="collapse" href="#collapseExample-17" role="button" aria-expanded="false"
 														class="price_services__more">Подробнее</a> -->
-												</span>
+													</span>
+												</div>
+												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
+													<!-- <a href="#" class="price_services__sale">Акция</a> -->
+												</div>
 											</div>
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<!-- <a href="#" class="price_services__sale">Акция</a> -->
-											</div>
-										</div>
 
-									</div>
-									<div class="col-12 price_services__descr_column">
-										<div class="collapse" id="collapseExample-17">
-											<!-- <div class="price_services__descr">
+										</div>
+										<div class="col-12 price_services__descr_column">
+											<div class="collapse" id="collapseExample-17">
+												<!-- <div class="price_services__descr">
 												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
 													натуральный
 													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
 													позволить
 													изяществу взять верх над буйством цвета?</p>
 											</div> -->
+											</div>
+										</div>
+
+										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
+											<!-- <a href="#" class="price_services__sale">Акция</a> -->
+										</div>
+
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
+										<div class="col-6 col-md-4 col-lg-3 price_services__price">
+											<span class="price_services__amount">10180</span>₽</span>
+										</div>
+										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
 										</div>
 									</div>
 
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<!-- <a href="#" class="price_services__sale">Акция</a> -->
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<span class="price_services__amount">10180</span>₽</span>
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
 								</div>
+								<!--/.price_services__item-->
 
-							</div>
-							<!--/.price_services__item-->
-
-							<div class="price_services__item">
-								<div class="row align-items-center">
-									<div class="col-12 col-lg-6">
-										<div class="row mb-lg-0 mb-2">
-											<div class="col-12 col-md-9 order-first">
-												<span class="price_services__name">
-													<span>Cнятие стойкого покрытия</span>
-													<!--  <a
+								<div class="price_services__item">
+									<div class="row align-items-center">
+										<div class="col-12 col-lg-6">
+											<div class="row mb-lg-0 mb-2">
+												<div class="col-12 col-md-9 order-first">
+													<span class="price_services__name">
+														<span>Cнятие стойкого покрытия</span>
+														<!--  <a
 														data-toggle="collapse" href="#collapseExample-18" role="button" aria-expanded="false"
 														class="price_services__more">Подробнее</a> -->
-												</span>
+													</span>
+												</div>
+												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
+													<!-- <a href="#" class="price_services__sale">Акция</a> -->
+												</div>
 											</div>
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<!-- <a href="#" class="price_services__sale">Акция</a> -->
-											</div>
-										</div>
 
-									</div>
-									<div class="col-12 price_services__descr_column">
-										<div class="collapse" id="collapseExample-18">
-											<!-- <div class="price_services__descr">
+										</div>
+										<div class="col-12 price_services__descr_column">
+											<div class="collapse" id="collapseExample-18">
+												<!-- <div class="price_services__descr">
 												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
 													натуральный
 													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
 													позволить
 													изяществу взять верх над буйством цвета?</p>
 											</div> -->
+											</div>
+										</div>
+
+										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
+											<!-- <a href="#" class="price_services__sale">Акция</a> -->
+										</div>
+
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>160 минут</span></div>
+										<div class="col-6 col-md-4 col-lg-3 price_services__price">
+											<span class="price_services__amount">400</span>₽</span>
+										</div>
+										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
 										</div>
 									</div>
 
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<!-- <a href="#" class="price_services__sale">Акция</a> -->
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>160 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<span class="price_services__amount">400</span>₽</span>
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
 								</div>
+								<!--/.price_services__item-->
 
-							</div>
-							<!--/.price_services__item-->
-
-							<div class="price_services__item">
-								<div class="row align-items-center">
-									<div class="col-12 col-lg-6">
-										<div class="row mb-lg-0 mb-2">
-											<div class="col-12 col-md-9 order-first">
-												<span class="price_services__name">
-													<span>Дизайн 1 ногтя</span>
-													<!--  <a
+								<div class="price_services__item">
+									<div class="row align-items-center">
+										<div class="col-12 col-lg-6">
+											<div class="row mb-lg-0 mb-2">
+												<div class="col-12 col-md-9 order-first">
+													<span class="price_services__name">
+														<span>Дизайн 1 ногтя</span>
+														<!--  <a
 														data-toggle="collapse" href="#collapseExample-19" role="button" aria-expanded="false"
 														class="price_services__more">Подробнее</a> -->
-												</span>
+													</span>
+												</div>
+												<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
+													<!-- <a href="#" class="price_services__sale">Акция</a> -->
+												</div>
 											</div>
-											<div class="col-6 col-md-3 pl-md-0 d-none d-md-block price_services__sale_column">
-												<!-- <a href="#" class="price_services__sale">Акция</a> -->
-											</div>
-										</div>
 
-									</div>
-									<div class="col-12 price_services__descr_column">
-										<div class="collapse" id="collapseExample-19">
-											<!-- <div class="price_services__descr">
+										</div>
+										<div class="col-12 price_services__descr_column">
+											<div class="collapse" id="collapseExample-19">
+												<!-- <div class="price_services__descr">
 												<p>Закажите себе маникюр и добавьте в него нотку французской изысканности. Классический
 													натуральный
 													лак и белые кончики ногтей придают изысканный оттенок изысканным ногтям. Почему бы не
 													позволить
 													изяществу взять верх над буйством цвета?</p>
 											</div> -->
+											</div>
+										</div>
+
+										<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
+											<!-- <a href="#" class="price_services__sale">Акция</a> -->
+										</div>
+
+										<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
+										<div class="col-6 col-md-4 col-lg-3 price_services__price">
+											<span class="price_services__amount">100</span>₽</span>
+										</div>
+										<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
+											<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
 										</div>
 									</div>
 
-									<div class="col-6 col-lg-3 price_services__sale_column_mobile pl-md-0 d-md-none d-block">
-										<!-- <a href="#" class="price_services__sale">Акция</a> -->
-									</div>
-
-									<div class="col-6 col-md-3 col-lg-1 price_services__duration pr-md-0"><span>60 минут</span></div>
-									<div class="col-6 col-md-4 col-lg-3 price_services__price">
-										<span class="price_services__amount">100</span>₽</span>
-									</div>
-									<div class="col-6 col-md-5 col-lg-2 price_services__link_column">
-										<div class="price_services__link"><a href="#" class="btn btn-two order">Записаться</a></div>
-									</div>
 								</div>
+								<!--/.price_services__item-->
 
 							</div>
-							<!--/.price_services__item-->
-
 						</div>
+						<!--/.price_services__section-->
 					</div>
-					<!--/.price_services__section-->
+					<!--/.sections-->
 
 				</div>
 				<!--/.container-->
@@ -1445,6 +1329,10 @@
 <script src="js/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+<script>
+	var containerEl = document.querySelector('.sections');
+	var mixer = mixitup(containerEl);
+</script>
 
 </html>
