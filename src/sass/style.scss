@@ -1138,7 +1138,7 @@ button:focus {
   &__nav {
     margin-bottom: 34px;
 
-    .control {
+    .mixitup-control {
       display: inline-block;
       background: none;
       box-shadow: none;
@@ -1153,7 +1153,7 @@ button:focus {
         margin-right: 0;
       }
 
-      &.mixitup-control-active,
+      &-active,
       &:hover {
         color: $dark-grey;
         border-color: transparent;
