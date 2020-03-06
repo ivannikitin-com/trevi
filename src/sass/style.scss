@@ -1390,10 +1390,6 @@ button:focus {
 
   .entry-header {
     margin-bottom: 44px;
-
-    @media (min-width: 768px) {
-      margin-bottom: 28px;
-    }
   }
 
   &__img {
