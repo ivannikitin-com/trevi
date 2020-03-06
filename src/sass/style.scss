@@ -896,12 +896,12 @@ button:focus {
 
   &::before {
     margin-left: -100%;
-    left: -24px;
+    left: -3%;
   }
 
   &::after {
     margin-right: -100%;
-    right: -24px;
+    right: -3%;
   }
 
   > span {
@@ -1347,9 +1347,26 @@ button:focus {
   }
 }
 
+.entry {
+  padding-bottom: 74px;
+  padding-top: 6px;
+
+  &-content {
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .sale {
   $this: &;
   .entry-title {
+    margin-bottom: 0;
+
+    @media (min-width: 768px) {
+      margin-top: -8px;
+    }
+
     &::before,
     &::after {
       display: none;
@@ -1365,14 +1382,20 @@ button:focus {
   }
 
   .entry-header {
-    margin-bottom: 55px;
+    margin-bottom: 44px;
 
-    @media (min-width: 481px) {
+    @media (min-width: 768px) {
       margin-bottom: 28px;
     }
   }
 
+  &__img {
+    margin-bottom: 22px;
+  }
+
   &__price {
+    margin-bottom: 14px;
+
     del {
       font-size: 16px;
       font-weight: bold;
@@ -1398,6 +1421,20 @@ button:focus {
     #{$this}__amount {
       font-size: 36px;
     }
+  }
+
+  &__link {
+    margin-bottom: 28px;
+  }
+}
+
+.share {
+  &__title {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    color: $warm-grey-three;
+    margin-top: 32px;
   }
 }
 
