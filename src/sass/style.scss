@@ -1352,7 +1352,15 @@ button:focus {
   .entry-title {
     &::before,
     &::after {
-      bottom: -15px !important;
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      &::before,
+      &::after {
+        display: inline-block;
+        bottom: -15px !important;
+      }
     }
   }
 
