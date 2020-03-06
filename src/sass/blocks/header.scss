@@ -13,10 +13,6 @@
       margin-right: 0;
     }
 
-    @media (min-width: 768px) {
-      // margin: 28px 0 auto 0;
-    }
-
     &__img {
       width: 165px;
 
@@ -175,6 +171,10 @@
         margin-bottom: 0;
       }
 
+      &:hover {
+        color: $black;
+      }
+
       @media (min-width: 768px) {
         font-size: 23px;
       }
@@ -292,7 +292,6 @@
 .nav-main {
   padding: 0;
   justify-content: center;
-  // margin-bottom: 30px;
 
   @media (min-width: 481px) {
     justify-content: space-between;

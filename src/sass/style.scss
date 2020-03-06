@@ -27,14 +27,16 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  // word-wrap: break-word;
-  // word-break: break-word;
 }
 
 a[href^="mailto:"],
 a[href^="tel:"] {
   white-space: nowrap;
   text-decoration: none;
+}
+
+a:hover {
+  color: $carmine;
 }
 
 a.btn {
@@ -170,20 +172,9 @@ li {
   }
 }
 
-.custom-control-label {
-  &::before {
-    top: -2px;
-  }
-}
-
 .custom-control-input:checked ~ .custom-control-label::before {
-  /*border-color: $warm-grey;*/
-  background-color: $white;
+  // background-color: $white;
 }
-/*.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
-  background-image: url(../img/sprite.png);
-  background-position: -74px -199px !important;
-}*/
 
 textarea {
   &.form-control {
