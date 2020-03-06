@@ -91,7 +91,7 @@ h1.entry-title {
   &::before {
     content: "";
     position: absolute;
-    background-color: rgb(129, 126, 126);
+    background-color: $white-four;
     height: 1px;
     width: 100%;
     bottom: 0;
@@ -101,11 +101,17 @@ h1.entry-title {
   &::after {
     content: "";
     position: absolute;
-    background-color: #222;
-    height: 2px;
-    width: 50px;
+    background-color: $black-five;
+    height: 1px;
+    width: 32px;
     bottom: 0;
     left: 50%;
+  }
+
+  &.text-left {
+    &::after {
+      left: 0;
+    }
   }
 }
 
@@ -170,10 +176,6 @@ li {
       }
     }
   }
-}
-
-.custom-control-input:checked ~ .custom-control-label::before {
-  // background-color: $white;
 }
 
 textarea {
@@ -1341,6 +1343,52 @@ button:focus {
 
     @media (min-width: 768px) {
       margin-bottom: 0;
+    }
+  }
+}
+
+.sale {
+  $this: &;
+  .entry-title {
+    &::before,
+    &::after {
+      bottom: -15px !important;
+    }
+  }
+
+  .entry-header {
+    margin-bottom: 55px;
+
+    @media (min-width: 481px) {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__price {
+    del {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.45;
+      letter-spacing: 0.6px;
+      color: $warm-grey-three;
+      margin-right: 18px;
+
+      #{$this}__amount {
+        font-size: 24px;
+      }
+    }
+  }
+
+  ins {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 0.97;
+    letter-spacing: 0.9px;
+    color: $scarlet;
+
+    #{$this}__amount {
+      font-size: 36px;
     }
   }
 }
