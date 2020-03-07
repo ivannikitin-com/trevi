@@ -105,13 +105,7 @@ h1.entry-title {
     height: 1px;
     width: 32px;
     bottom: 0;
-    left: 50%;
-  }
-
-  &.text-left {
-    &::after {
-      left: 0;
-    }
+    left: 0;
   }
 }
 
@@ -1372,6 +1366,7 @@ button:focus {
 
     @media (min-width: 768px) {
       margin-top: -8px;
+      padding-bottom: 18px;
     }
 
     &::before,
@@ -1383,13 +1378,16 @@ button:focus {
       &::before,
       &::after {
         display: inline-block;
-        bottom: -15px !important;
       }
     }
   }
 
   .entry-header {
     margin-bottom: 44px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__img {
@@ -1438,6 +1436,91 @@ button:focus {
     letter-spacing: 3.6px;
     color: $warm-grey-three;
     margin-top: 32px;
+  }
+}
+
+.search-results {
+  $this: &;
+  margin-bottom: 45px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    &:last-child {
+      #{$this}__text p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .entry-header {
+    text-align: center;
+
+    h1.entry-title {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__link {
+    a {
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 0.45px;
+      color: $dried-blood;
+    }
+  }
+}
+
+.wp-pagenavi {
+  text-align: center;
+  font-size: 16px;
+
+  & a,
+  & span {
+    display: inline-block;
+    color: $dark-grey;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    padding: 0 0.2em;
+    min-width: 30px;
+    margin: 0 4px;
+    background: $white;
+    border: 2px solid $warm-grey;
+  }
+
+  a {
+    &.last,
+    &.first {
+      border: 0;
+    }
+  }
+
+  span.current {
+    font-weight: bold;
+    border: 2px solid $white;
+  }
+
+  & .previouspostslink,
+  & .nextpostslink {
+    font-size: 14px;
+    line-height: normal;
+    height: auto;
+    border: 0;
+    border-bottom: 1px solid $dark-grey;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 0;
+    }
+  }
+
+  & .previouspostslink {
+    margin-right: 12px;
+  }
+
+  & .nextpostslink {
+    margin-left: 12px;
   }
 }
 
