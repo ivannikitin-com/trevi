@@ -1657,7 +1657,8 @@ button:focus {
 @media screen and (min-width: 1024px) {
   select,
   textarea,
-  input {
+  input,
+  .form-control {
     font-size: 12px;
   }
 }
