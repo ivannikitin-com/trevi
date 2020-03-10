@@ -84,6 +84,14 @@ h5,
   margin-bottom: 50px;
 }
 
+@mixin lhCrop($line-height, $font-size: 36px) {
+  margin-top: calc((1 - #{$line-height}) * #{$font-size});
+}
+
+.text-to-crop {
+  @include lhCrop($headings-line-height, $h1-font-size);
+}
+
 .decor-underline {
   position: relative;
   display: inline-block;
@@ -966,32 +974,6 @@ button:focus {
 
   h1 {
     @extend .decor-underline;
-    //   position: relative;
-    //   display: inline-block;
-    //   margin-bottom: 12px;
-    //   padding-bottom: 7px;
-
-    //   &::before {
-    //     position: absolute;
-    //     background-color: $black-five;
-    //     content: "";
-    //     height: 1px;
-    //     width: 32px;
-    //     left: 0;
-    //     bottom: 0;
-    //     z-index: 2;
-    //   }
-
-    //   &::after {
-    //     position: absolute;
-    //     background-color: $white-four;
-    //     content: "";
-    //     height: 1px;
-    //     width: 100%;
-    //     left: 0;
-    //     bottom: 0;
-    //     z-index: 1;
-    //   }
   }
 
   &__txt {
@@ -1383,7 +1365,7 @@ button:focus {
     @extend .decor-underline;
 
     @media (min-width: 768px) {
-      margin-top: -8px;
+      @include lhCrop($headings-line-height, $h1-font-size);
       padding-bottom: 18px;
     }
 
@@ -1476,7 +1458,6 @@ button:focus {
 
     h1.entry-title {
       @extend .decor-underline;
-      // margin-top: -10px;
     }
   }
 
