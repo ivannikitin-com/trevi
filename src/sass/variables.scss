@@ -16,7 +16,11 @@ $container-max-widths: (
 $font-family-base: "Montserrat", sans-serif;
 $font-size-base: 0.875rem;
 $line-height-base: 1.57;
-$h1-font-size: 36px;
+$h1-font-size: $font-size-base * 2.571428571;
+$h2-font-size: $font-size-base * 2.1428571;
+$h3-font-size: $font-size-base * 1.7142857;
+$h4-font-size: $font-size-base * 1.285714;
+$h5-font-size: $font-size-base * 1.1428571;
 $input-placeholder-color: rgba(136, 136, 136, 0.4);
 $input-height: 50px;
 $input-border-width: 2px;

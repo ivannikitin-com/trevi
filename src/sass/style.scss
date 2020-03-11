@@ -45,32 +45,24 @@ a.btn {
 
 h1,
 .h1 {
-  font-size: 36px;
   text-align: center;
+  margin-bottom: 36px;
+
+  @media (min-width: 481px) {
+    margin-bottom: 46px;
+  }
 }
 
 h2,
 .h2 {
-  font-size: 30px;
   font-weight: bold;
-  line-height: 0.8;
   color: $dark-grey;
+  margin-bottom: 25px;
 }
 
 h3,
 .h3 {
-  font-size: 24px;
   margin-bottom: 16px;
-}
-
-h4,
-.h4 {
-  font-size: 18px;
-}
-
-h5,
-.h5 {
-  font-size: 16px;
 }
 
 .subtitle {
@@ -81,6 +73,20 @@ h5,
   color: $dark-grey;
   text-transform: uppercase;
   margin-bottom: 50px;
+}
+
+.subtitle1 {
+  @extend .decor-underline;
+}
+
+.subtitle2 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  color: $dried-blood;
+  text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
 @mixin lhCrop($line-height, $font-size: 36px) {
