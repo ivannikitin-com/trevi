@@ -21,19 +21,6 @@ const webpackOpts = {
             presets: ["@babel/preset-env"]
           }
         }
-      },
-      {
-        test: require.resolve("jquery"),
-        use: [
-          {
-            loader: "expose-loader",
-            options: "jQuery"
-          },
-          {
-            loader: "expose-loader",
-            options: "$"
-          }
-        ]
       }
     ]
   },
@@ -54,7 +41,9 @@ const buildScripts = () =>
     )
     .pipe(
       webpackStream({
-        ...webpackOpts,
+        optimization: {
+          minimize: false
+        },
         output: {
           filename: "script.js"
         }

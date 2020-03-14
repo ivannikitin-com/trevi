@@ -1,7 +1,3 @@
-import "bootstrap";
-import "popper.js";
-import $ from "jquery";
-
 (function($) {
   $(function() {
     $("#about-us_toggle").on("click", function() {
