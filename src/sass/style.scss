@@ -167,8 +167,9 @@ li {
 }
 
 .entry ul {
-  padding-left: 22px;
   list-style: none;
+  padding-left: 22px;
+  padding-top: 0.5rem;
 
   li {
     display: flex;
@@ -207,6 +208,17 @@ li {
     &::after {
       display: none;
     }
+  }
+}
+
+.wp-block-advanced-bootstrap-blocks-container {
+  margin-bottom: 50px;
+}
+
+.wp-block-group.has-background {
+  .wp-block-advanced-bootstrap-blocks-container {
+    padding-top: 56px;
+    padding-bottom: 46px;
   }
 }
 
@@ -671,6 +683,10 @@ button:focus {
   }
 }
 
+.zoom {
+  @extend %zoom;
+}
+
 .licence {
   padding-top: 35px;
   margin-bottom: 28px;
@@ -764,17 +780,40 @@ button:focus {
 
 .specialists {
   &__item {
-    padding-left: 38px;
-    padding-right: 38px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
 .slick-slider {
+  $this: &;
+
   .slick-slide {
     padding-bottom: 23px;
 
     @media (min-width: 481px) {
       padding-bottom: 0;
+    }
+
+    a {
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    figcaption {
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.7px;
+      text-align: center;
+      color: $black-four;
+      margin-top: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 
@@ -875,13 +914,29 @@ button:focus {
     }
   }
 
+  &.wp-block-cb-carousel.cb-padding .wp-block-cb-slide {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .wp-block-cb-slide {
+    figure {
+      position: relative;
+
+      a {
+        @extend %zoom;
+      }
+    }
+  }
+
   .gallery_carousel {
     &__item {
-      padding-left: 38px;
-      padding-right: 38px;
+      padding-left: 10%;
+      padding-right: 10%;
     }
 
     &__link {
+      display: inline-block;
       @extend %zoom;
     }
 
@@ -915,6 +970,31 @@ button:focus {
         left: calc(100% + 8.33333% - 30px);
         margin-left: 0;
       }
+    }
+  }
+}
+
+.fancybox-close-small {
+  right: -60px;
+  top: -21px;
+}
+
+.fancybox-bg {
+  background: rgba(0, 0, 0, 0.68%);
+}
+
+.fancybox-slide {
+  svg {
+    border: 2px solid $white;
+    border-radius: 50%;
+  }
+  &--image {
+    .fancybox-button {
+      color: $white;
+    }
+
+    .fancybox-close-small {
+      opacity: 1;
     }
   }
 }
