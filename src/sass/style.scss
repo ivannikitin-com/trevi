@@ -182,22 +182,49 @@ li {
       background-color: $scarlet;
       border-radius: 50%;
       margin-right: 9px;
+      margin-left: 0;
       flex-basis: 7px;
       flex-grow: 0;
       flex-shrink: 0;
-      margin-top: 7px;
+      margin-top: 6px;
     }
   }
 
   &.mark-right {
+    padding-right: 22px;
+    padding-left: 0;
+
     li {
       text-align: right;
       flex-direction: row-reverse;
 
       &::before {
-        margin-left: 9px;
         margin-right: 0;
+        margin-left: 9px;
       }
+    }
+  }
+}
+
+@mixin mark-right() {
+  padding-right: 22px;
+  padding-left: 0;
+
+  li {
+    text-align: right;
+    flex-direction: row-reverse;
+
+    &::before {
+      margin-right: 0;
+      margin-left: 9px;
+    }
+  }
+}
+
+.entry-content {
+  .text-right {
+    ul {
+      @include mark-right();
     }
   }
 }
