@@ -1275,13 +1275,10 @@ button:focus {
       padding: 0;
       border: 0;
       color: $chocolate;
-      margin-left: 24px;
+      margin-left: 12px;
+      margin-right: 12px;
       border-bottom: 1px solid $dark-grey;
       margin-bottom: 10px;
-
-      &:first-child {
-        margin-left: 0;
-      }
 
       &-active,
       &:hover {
