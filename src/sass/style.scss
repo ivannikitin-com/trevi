@@ -280,16 +280,13 @@ div.wpcf7-validation-errors {
         margin-left: 0;
 
         .custom-control-input[type="checkbox"] {
-          left: $custom-control-gutter + $custom-control-indicator-size;
+          left: -($custom-control-gutter + $custom-control-indicator-size);
         }
       }
     }
   }
-}
-
-.wpcf7-acceptance {
-  .custom-control-label {
-    margin-left: -1em;
+  > br {
+    display: none;
   }
 }
 
