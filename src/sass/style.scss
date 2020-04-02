@@ -273,6 +273,26 @@ div.wpcf7-validation-errors {
   border-color: $crimson !important;
 }
 
+.custom-control {
+  &.custom-checkbox {
+    .wpcf7-acceptance {
+      span.wpcf7-list-item {
+        margin-left: 0;
+
+        .custom-control-input[type="checkbox"] {
+          left: $custom-control-gutter + $custom-control-indicator-size;
+        }
+      }
+    }
+  }
+}
+
+.wpcf7-acceptance {
+  .custom-control-label {
+    margin-left: -1em;
+  }
+}
+
 .btn {
   font-size: 12px;
   font-weight: bold;
@@ -1571,13 +1591,20 @@ button:focus {
   }
 }
 
-.share {
-  &__title {
+.addtoany {
+  $this: &;
+
+  &_content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 14px;
+  }
+
+  &_header {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 3.6px;
     color: $warm-grey-three;
-    margin-top: 32px;
   }
 }
 
