@@ -43,6 +43,12 @@ a.btn {
   text-decoration: none;
 }
 
+.wp-block-image {
+  img {
+    max-width: 100%;
+  }
+}
+
 h1,
 .h1 {
   text-align: center;
