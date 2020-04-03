@@ -1605,13 +1605,14 @@ button:focus {
   }
 }
 
-.search-results {
+.search-results-content {
   $this: &;
   margin-bottom: 45px;
 
   &__item {
     display: flex;
     flex-direction: column;
+
     &:last-child {
       #{$this}__text p {
         margin-bottom: 0;
