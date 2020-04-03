@@ -1026,8 +1026,10 @@ button:focus {
 }
 
 .fancybox-close-small {
-  right: -60px;
-  top: -21px;
+  svg {
+    border: 2px solid $white;
+    border-radius: 50%;
+  }
 }
 
 .fancybox-bg {
@@ -1035,13 +1037,10 @@ button:focus {
 }
 
 .fancybox-slide {
-  svg {
-    border: 2px solid $white;
-    border-radius: 50%;
-  }
   &--image {
     .fancybox-button {
       color: $white;
+      margin-right: 8px;
     }
 
     .fancybox-close-small {
