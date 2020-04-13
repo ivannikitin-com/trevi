@@ -1049,6 +1049,15 @@ button:focus {
   }
 }
 
+.fancybox-navigation .fancybox-button {
+  color: #000;
+  background-color: #fff;
+
+  &:hover {
+    color: #000;
+  }
+}
+
 #breadcrumbs {
   text-align: center;
   overflow: hidden;
