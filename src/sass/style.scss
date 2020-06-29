@@ -46,6 +46,7 @@ a.btn {
 .wp-block-image {
   img {
     max-width: 100%;
+    height: auto;
   }
 }
 
@@ -503,11 +504,13 @@ button:focus {
   }
 
   &__wrap {
+    border: 10px solid $warm-grey-two;
     padding: 24px 32px 22px 28px;
     margin-left: 28px;
     background-color: $white-78;
 
     @media (min-width: 481px) {
+      border-left: 0;
       margin-left: 0;
       padding-left: 64px;
       padding-bottom: 9.12%;
