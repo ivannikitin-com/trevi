@@ -42,6 +42,25 @@ a:hover {
 a.btn {
   text-decoration: none;
 }
+.alignleft {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 22px;
+}
+
+.alignright {
+  float: right;
+  margin-left: 30px;
+  margin-bottom: 22px;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 22px;
+}
 
 .wp-block-image {
   img {
@@ -488,7 +507,6 @@ button:focus {
     }
 
     .col-content {
-      padding-right: 0;
       justify-content: flex-end;
       z-index: 2;
 
